@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/nentrangden"
-    tools:context=".MainActivity">
+    tools:context=".page3_khamphangay">
 
     <TextView
         android:id="@+id/textView1"
@@ -49,7 +49,7 @@
         app:layout_constraintTop_toBottomOf="@id/textView2" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/button_page3"
         android:layout_width="230dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="68dp"
@@ -71,7 +71,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintBottom_toTopOf="@id/button"
+        app:layout_constraintBottom_toTopOf="@id/button_page3"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         android:layout_marginBottom="10dp">

@@ -47,6 +47,7 @@
                 android:layout_width="230dp"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
+                android:id="@+id/btn_trangchinh"
                 android:text="Hãy bắt đầu"
                 android:textColor="#9D8B8B"
                 android:textStyle="bold"
