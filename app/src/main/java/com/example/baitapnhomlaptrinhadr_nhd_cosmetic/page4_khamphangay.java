@@ -18,8 +18,8 @@ public class page4_khamphangay extends AppCompatActivity {
         btnforward.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-//                Intent intent= new Intent(page4_khamphangay.this, page3_khamphangay.class);
-//                startActivity(intent);
+                Intent intent= new Intent(page4_khamphangay.this, page8_Trangchu.class);
+                startActivity(intent);
 
             }
         });
