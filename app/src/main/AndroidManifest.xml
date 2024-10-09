@@ -25,6 +25,11 @@
         <activity android:name=".page3_khamphangay" />
         <activity android:name=".page4_khamphangay" />
 
+
+
+        <activity android:name=".page8_Trangchu"></activity>
+
+
     </application>
 
 </manifest>
