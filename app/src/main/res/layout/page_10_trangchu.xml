@@ -1,4 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -151,7 +155,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Sản phẩm bán chạy"
-                android:textSize="23sp"
+                android:textSize="33sp"
                 android:textStyle="bold" />
 
             <TextView
@@ -588,6 +592,235 @@
 
         </HorizontalScrollView>
 
+        <!-- Khung chữ hình chữ nhật chữ bên trái hình bên phải -->
+        <LinearLayout
+            android:layout_width="450dp"
+            android:layout_height="200dp"
+            android:orientation="horizontal"
+            android:background="#E6E6E6"
+            android:padding="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="16dp">
+
+            <!-- Text nằm bên trái -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Khuyến mãi 40%"
+                android:textSize="23sp"
+                android:layout_weight="1" />
+
+            <!-- Image nằm bên phải -->
+            <ImageView
+                android:layout_width="200dp"
+                android:layout_height="250dp"
+                android:src="@drawable/mauanh01" />
+        </LinearLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sản phẩm đề xuất "
+            android:layout_marginLeft="10dp"
+            android:textSize="23sp"
+            android:layout_weight="1" />
+
+        <!-- HorizontalScrollView chứa sản phẩm nằm ngang -->
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal">
+
+                <!-- Sản phẩm 1 -->
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginEnd="16dp">
+
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:src="@drawable/sanphambieutuong3" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Sản phẩm 1" />
+                </LinearLayout>
+
+                <!-- Sản phẩm 2 -->
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginEnd="16dp">
+
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:src="@drawable/sanphambieutuong2" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Sản phẩm 2" />
+                </LinearLayout>
+
+                <!-- Sản phẩm 3 -->
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginEnd="16dp">
+
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:src="@drawable/sanphambieutuong" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Sản phẩm 3" />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginEnd="16dp">
+
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:src="@drawable/sanphambieutuong" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Sản phẩm 3" />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginEnd="16dp">
+
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:src="@drawable/sanphambieutuong" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Sản phẩm 3" />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginEnd="16dp">
+
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:src="@drawable/sanphambieutuong" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Sản phẩm 3" />
+
+                </LinearLayout>
+            </LinearLayout>
+        </HorizontalScrollView>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sản phẩm nỗi bật"
+                android:textSize="23sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Xem tất cả"
+                android:textSize="16sp"
+                android:layout_marginRight="10dp"
+                android:textStyle="normal" />
+        </LinearLayout>
+
+        <!-- Khung chữ hình chữ nhật chữ bên trái hình bên phải -->
+        <LinearLayout
+            android:layout_width="450dp"
+            android:layout_height="200dp"
+            android:orientation="horizontal"
+            android:background="#E6E6E6"
+            android:padding="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="16dp">
+
+            <!-- Text nằm bên trái -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bộ sưu tập mới"
+                android:textSize="23sp"
+                android:layout_weight="1" />
+
+            <!-- Image nằm bên phải -->
+            <ImageView
+                android:layout_width="200dp"
+                android:layout_height="300dp"
+                android:src="@drawable/anhmau02" />
+        </LinearLayout>
+
+
+        <!-- Khung chữ hình chữ nhật chữ bên trái hình bên phải -->
+        <LinearLayout
+            android:layout_width="450dp"
+            android:layout_height="200dp"
+            android:orientation="horizontal"
+            android:background="#E6E6E6"
+            android:padding="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="16dp">
+
+            <!-- Text nằm bên trái -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bộ sưu tập mới"
+                android:textSize="23sp"
+                android:layout_weight="1" />
+
+            <!-- Image nằm bên phải -->
+            <ImageView
+                android:layout_width="200dp"
+                android:layout_height="300dp"
+                android:src="@drawable/mauanh" />
+        </LinearLayout>
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent">
@@ -611,7 +844,6 @@
                 >
 
                 <ImageView
-                    android:id="@+id/btnhome"
                     android:layout_width="40dp"
                     android:layout_height="40dp"
                     android:src="@drawable/iconhome"
@@ -649,3 +881,4 @@
 
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
