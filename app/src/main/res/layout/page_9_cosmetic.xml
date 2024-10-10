@@ -1,54 +1,58 @@
-<?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.drawerlayout.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/drawer_layout"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
-
-    <LinearLayout
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="match_parent">
 
-        android:orientation="vertical"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="-16dp">
-
-        <!-- Thanh trạng thái với icon thông báo và menu nằm cùng hàng với NHD -->
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:gravity="center_vertical"
-            android:orientation="horizontal"
-            android:paddingHorizontal="8dp">
+            android:layout_height="match_parent"
 
-            <!-- Icon menu ở bên trái -->
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:contentDescription="Menu"
-                android:onClick="openMenu"
-                android:src="@drawable/iconmenu" />
+            android:orientation="vertical"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="-16dp">
 
-            <!-- TextView ở giữa -->
-            <TextView
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:gravity="center"
-                android:layout_marginLeft="20dp"
-                android:text="NHD"
-                android:textSize="26sp"
-                android:textStyle="bold" />
+            <!-- Thanh trạng thái với icon thông báo và menu nằm cùng hàng với NHD -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingHorizontal="8dp">
 
-            <!-- Icon thông báo ở bên phải -->
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:contentDescription="Notification"
-                android:onClick="openNotification"
-                android:src="@drawable/iconnotification" />
+                <!-- Icon menu ở bên trái -->
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="Menu"
+                    android:onClick="openMenu"
+                    android:src="@drawable/iconmenu" />
 
-        </LinearLayout>
+                <!-- TextView ở giữa -->
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:layout_marginLeft="20dp"
+                    android:text="NHD"
+                    android:textSize="26sp"
+                    android:textStyle="bold" />
 
+                <!-- Icon thông báo ở bên phải -->
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="Notification"
+                    android:onClick="openMenu"
+                    android:src="@drawable/iconnotification" />
+
+            </LinearLayout>
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -648,3 +652,13 @@
 
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
+
+<com.google.android.material.navigation.NavigationView
+android:id="@+id/nav_view"
+android:layout_width="wrap_content"
+android:layout_height="match_parent"
+android:layout_gravity="start"
+app:headerLayout="@layout/menu"
+ />
+
+    </androidx.drawerlayout.widget.DrawerLayout>

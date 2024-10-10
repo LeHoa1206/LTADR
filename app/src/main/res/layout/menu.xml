@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <ImageView
+        android:id="@+id/imageViewProfile"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/user"
+        android:layout_gravity="center" />
+
+    <Button
+        android:id="@+id/buttontrangchu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Trang Chủ"
+        android:clickable="true"
+        android:textColor="@android:color/black"
+        android:textSize="22sp"
+        android:drawableLeft="@drawable/homefake"
+        android:drawablePadding="10dp"
+        android:background="?attr/selectableItemBackground"
+        android:padding="10dp"
+        android:fontFamily="@font/fontxin" /> <!-- Use custom font -->
+
+    <Button
+        android:id="@+id/buttonProfile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Hồ Sơ"
+        android:clickable="true"
+        android:textColor="@android:color/black"
+        android:textSize="22sp"
+        android:drawableLeft="@drawable/canhanfake"
+        android:drawablePadding="10dp"
+        android:background="?attr/selectableItemBackground"
+        android:padding="10dp"
+        android:fontFamily="@font/fontxin" /> <!-- Use custom font -->
+
+    <Button
+        android:id="@+id/buttonOrders"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Đơn Hàng"
+        android:textColor="@android:color/black"
+        android:textSize="22sp"
+        android:drawableLeft="@drawable/giohangfake"
+        android:drawablePadding="10dp"
+        android:background="?attr/selectableItemBackground"
+        android:padding="10dp"
+        android:fontFamily="@font/fontxin" /> <!-- Use custom font -->
+
+    <Button
+        android:id="@+id/buttonExplore"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Khám Phá"
+        android:textColor="@android:color/black"
+        android:textSize="22sp"
+        android:drawableLeft="@drawable/searchfake"
+        android:drawablePadding="10dp"
+        android:background="?attr/selectableItemBackground"
+        android:padding="10dp"
+        android:fontFamily="@font/fontxin" /> <!-- Use custom font -->
+
+    <Button
+        android:id="@+id/buttonSettings"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Cài Đặt"
+        android:textColor="@android:color/black"
+        android:textSize="22sp"
+        android:drawableLeft="@drawable/settingfake"
+        android:drawablePadding="10dp"
+        android:background="?attr/selectableItemBackground"
+        android:padding="10dp"
+        android:fontFamily="@font/fontxin" /> <!-- Use custom font -->
+
+    <Button
+        android:id="@+id/buttonSupport"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Hỗ Trợ"
+        android:textColor="@android:color/black"
+        android:textSize="22sp"
+        android:drawableLeft="@drawable/hotrofake"
+        android:drawablePadding="10dp"
+        android:background="?attr/selectableItemBackground"
+        android:padding="10dp"
+        android:fontFamily="@font/fontxin" /> <!-- Use custom font -->
+
+    <Button
+        android:id="@+id/buttonAbout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Giới Thiệu"
+        android:textColor="@android:color/black"
+        android:textSize="22sp"
+        android:drawableLeft="@drawable/aboutusfake"
+        android:drawablePadding="10dp"
+        android:background="?attr/selectableItemBackground"
+        android:padding="10dp"
+        android:fontFamily="@font/fontxin" /> <!-- Use custom font -->
+</LinearLayout>
