@@ -31,8 +31,9 @@
             android:layout_height="wrap_content"
             android:text="DHC"
             android:textColor="#FFFFFF"
-        android:textSize="28sp"
-        android:textStyle="bold" />
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:fontFamily="@font/fontxin" /> <!-- Thay đổi fontFamily -->
 
         <TextView
             android:layout_width="wrap_content"
@@ -41,22 +42,24 @@
             android:textColor="#FFFFFF"
             android:layout_marginTop="15dp"
             android:textSize="26sp"
-            android:textStyle="bold" />
+            android:textStyle="bold"
+            android:fontFamily="@font/fontxin" /> <!-- Thay đổi fontFamily -->
 
-            <Button
-                android:layout_width="230dp"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="16dp"
-                android:id="@+id/btn_trangchinh"
-                android:text="Hãy bắt đầu"
-                android:textColor="#9D8B8B"
-                android:textStyle="bold"
-                android:textSize="20dp"
-                android:backgroundTint="#ffff"
-                android:padding="20dp"
-                android:strokeWidth="2"
-                android:strokeColor="#FFFFFF"
-                android:alpha="0.6" />
+        <Button
+            android:layout_width="230dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:id="@+id/btn_trangchinh"
+            android:text="Hãy bắt đầu"
+            android:textColor="#9D8B8B"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:backgroundTint="#ffff"
+            android:padding="20dp"
+            android:strokeWidth="2"
+            android:strokeColor="#FFFFFF"
+            android:alpha="0.6"
+            android:fontFamily="@font/fontxin" /> <!-- Thay đổi fontFamily -->
 
     </LinearLayout>
 

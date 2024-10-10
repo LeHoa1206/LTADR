@@ -7,7 +7,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.drawerlayout.widget.DrawerLayout;
 import com.google.android.material.navigation.NavigationView;
 
-public class page10_Trangchu extends AppCompatActivity {
+public class page12_Trangchu extends AppCompatActivity {
     ImageView btnhomeButton,btnhoso,img_menu;
     DrawerLayout drawerLayout; // Khai báo DrawerLayout
     NavigationView navigationView; // Khai báo NavigationView
@@ -24,23 +24,23 @@ public class page10_Trangchu extends AppCompatActivity {
         // Khởi tạo các thành phần
         drawerLayout = findViewById(R.id.drawer_layout);
         btnhomeButton.setOnClickListener(view -> {
-            Intent intent = new Intent(page10_Trangchu.this, menu.class);
+            Intent intent = new Intent(page12_Trangchu.this, menu.class);
             startActivity(intent);
         });
         nam.setOnClickListener(view -> {
-            Intent intent = new Intent(page10_Trangchu.this, page8_Trangchu_Nam.class);
+            Intent intent = new Intent(page12_Trangchu.this, page8_Trangchu_Nam.class);
             startActivity(intent);
         });
         nu.setOnClickListener(view -> {
-            Intent intent = new Intent(page10_Trangchu.this, page9_Trangchu_Nu.class);
+            Intent intent = new Intent(page12_Trangchu.this, page9_Trangchu_Nu.class);
             startActivity(intent);
         });
         phukien.setOnClickListener(view -> {
-            Intent intent = new Intent(page10_Trangchu.this, page11_Trangchu.class);
+            Intent intent = new Intent(page12_Trangchu.this, page11_Trangchu.class);
             startActivity(intent);
         });
         lamdep.setOnClickListener(view -> {
-            Intent intent = new Intent(page10_Trangchu.this, page12_Trangchu.class);
+            Intent intent = new Intent(page12_Trangchu.this, page12_Trangchu.class);
             startActivity(intent);
         });
 //        btnhomeButton.setOnClickListener(view -> {

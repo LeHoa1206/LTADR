@@ -31,7 +31,7 @@ public class menu extends AppCompatActivity {
         // Thiết lập sự kiện nhấn nút
         buttonTrangChu.setOnClickListener(view -> {
             Log.d(TAG, "Button Trang Chủ clicked!"); // Ghi log khi nhấn nút Trang Chủ
-            openActivity(page8_Trangchu.class);
+            openActivity(page10_Trangchu.class);
         });
 
         buttonProfile.setOnClickListener(view -> {

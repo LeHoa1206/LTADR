@@ -23,7 +23,7 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".page8_Trangchu" android:exported="true"/>
+        <activity android:name=".page8_Trangchu_Nam" android:exported="true"/>
         <activity android:name=".hoso" android:exported="true"/>
         <activity android:name=".hotro" android:exported="true"/>
         <activity android:name=".setting" android:exported="true"/>
@@ -34,7 +34,7 @@
         <activity android:name=".page2_khamphangay" />
         <activity android:name=".page3_khamphangay" />
         <activity android:name=".page4_khamphangay" />
-        <activity android:name=".page9_Trangchu" />
+        <activity android:name=".page9_Trangchu_Nu" />
         <activity android:name=".page10_Trangchu" />
 
     </application>

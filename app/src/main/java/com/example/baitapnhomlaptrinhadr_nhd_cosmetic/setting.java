@@ -1,9 +1,12 @@
 package com.example.baitapnhomlaptrinhadr_nhd_cosmetic;
 
 import android.content.Intent;
+import android.media.Image;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
+import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.LinearLayout;
 import android.widget.Spinner;
 import android.widget.Switch;
@@ -17,7 +20,7 @@ public class setting extends AppCompatActivity {
     private Switch switchNotifications;
     private TextView tvTermsOfService, tvPrivacyPolicy, tvChatSupport, tvNotificationTitle;
     private LinearLayout notificationLayout;
-
+    ImageButton btnback;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -30,8 +33,11 @@ public class setting extends AppCompatActivity {
         tvPrivacyPolicy = findViewById(R.id.tv_privacy_policy);
         tvChatSupport = findViewById(R.id.tv_chat_support);
         tvNotificationTitle = findViewById(R.id.tv_notifications_label); // Thêm TextView tiêu đề thông báo
-
-
+        btnback=findViewById(R.id.button_back);
+        btnback.setOnClickListener(view -> {
+            Intent intent = new Intent(setting.this, menu.class);
+            startActivity(intent);
+        });
         // Ẩn Switch khi khởi động
         switchNotifications.setVisibility(View.GONE);
 
