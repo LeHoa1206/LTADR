@@ -27,6 +27,12 @@
         <activity android:name=".hoso" android:exported="true"/>
         <activity android:name=".hotro" android:exported="true"/>
         <activity android:name=".setting" android:exported="true"/>
+        <activity android:name=".DangNhap" android:exported="true"/>
+        <activity android:name=".taotaikhoan" android:exported="true"/>
+        <activity android:name=".Macode" android:exported="true"/>
+        <activity android:name=".Taomatkhaumoi" android:exported="true"/>
+        <activity android:name=".Quenmatkhau" android:exported="true"/>
+        <activity android:name=".resestpasswordsuccess" android:exported="true"/>
 
         <activity android:name=".menu" />
 

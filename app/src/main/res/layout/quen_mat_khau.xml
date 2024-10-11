@@ -3,68 +3,51 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:layout_marginLeft="20dp"
-    android:layout_marginRight="20dp"
-    >
+    android:padding="20dp">
 
+    <!-- Container for title and description -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:layout_marginBottom="10dp"
-        >
+        android:layout_marginBottom="10dp">
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:layout_marginBottom="10dp"
+        <!-- Back Button -->
+        <ImageButton
+            android:id="@+id/btn_back"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/icback"
+            android:contentDescription="Quay lại"
+            android:layout_marginBottom="10dp" />
 
-            >
-
-            <TextView
-                android:id="@+id/comback"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textColor="@android:color/black"
-                android:layout_marginTop="40dp"
-                android:gravity="center"
-                android:text="&lt;"
-                android:textSize="30sp"
-                android:paddingLeft="14dp"
-                android:paddingRight="14dp"
-                android:textColorHint="@color/white"
-                android:background="@drawable/rounded_background"
-                android:layout_gravity="left"
-                />
-        </LinearLayout>
-
+        <!-- Title -->
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Quên Mật Khẩu ?"
             android:textSize="30sp"
             android:layout_marginTop="30dp"
-            android:layout_marginBottom="20dp"
-            />
+            android:layout_marginBottom="20dp" />
 
+        <!-- Description -->
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Nhập email được liên kết với tài khoản của bạn và chúng tôi sẽ gửi email kèm theo hướng dẫn để đặt lại mật khẩu của bạn ."
+            android:text="Nhập email được liên kết với tài khoản của bạn và chúng tôi sẽ gửi email kèm theo hướng dẫn để đặt lại mật khẩu của bạn."
             android:textSize="18sp"
-            android:layout_marginBottom="80dp"
-            />
+            android:layout_marginBottom="80dp" />
 
+        <!-- Email Input Section -->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
             android:padding="10dp"
             android:gravity="center_vertical"
-            android:layout_marginBottom="60dp"
-            >
+            android:layout_marginBottom="60dp">
 
+            <!-- Email Icon -->
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -72,9 +55,11 @@
                 android:drawablePadding="8dp"
                 android:textSize="20sp"
                 android:textColor="@color/black"
-                android:paddingEnd="8dp"/>
+                android:paddingEnd="8dp" />
 
+            <!-- Email Input -->
             <EditText
+                android:id="@+id/edit_email"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -82,9 +67,10 @@
                 android:backgroundTint="@color/black"
                 android:textSize="18sp"
                 android:textColor="@color/black"
-                />
+                android:inputType="textEmailAddress" /> <!-- Set input type to email -->
         </LinearLayout>
 
+        <!-- Confirmation Button -->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -93,18 +79,17 @@
             android:layout_marginBottom="40dp">
 
             <Button
+                android:id="@+id/btn_confirm"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Confirm"
+                android:text="Xác Nhận"
                 android:textSize="18sp"
                 android:paddingLeft="40dp"
                 android:paddingRight="40dp"
                 android:paddingTop="10dp"
                 android:paddingBottom="10dp"
                 android:textColor="@color/white"
-                android:background="@drawable/button_border_radius"
-
-                />
+                android:background="@drawable/button_border_radius" />
         </LinearLayout>
 
     </LinearLayout>

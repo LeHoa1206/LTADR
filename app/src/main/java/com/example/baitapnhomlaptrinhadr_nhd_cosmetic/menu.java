@@ -7,7 +7,7 @@ import android.widget.Button;
 import androidx.appcompat.app.AppCompatActivity;
 
 public class menu extends AppCompatActivity {
-    Button buttonTrangChu, buttonProfile, buttonOrders, buttonExplore, buttonSettings, buttonSupport, buttonAbout;
+    Button buttonTrangChu,buttonLogout, buttonProfile, buttonOrders, buttonExplore, buttonSettings, buttonSupport, buttonAbout;
 
     private static final String TAG = "MenuActivity"; // Đặt tên cho tag để dễ dàng nhận diện
 
@@ -27,6 +27,7 @@ public class menu extends AppCompatActivity {
         buttonSettings = findViewById(R.id.buttonSettings);
         buttonSupport = findViewById(R.id.buttonSupport);
         buttonAbout = findViewById(R.id.buttonAbout);
+        buttonLogout = findViewById(R.id.buttonLogout);
 
         // Thiết lập sự kiện nhấn nút
         buttonTrangChu.setOnClickListener(view -> {
@@ -38,7 +39,10 @@ public class menu extends AppCompatActivity {
             Log.d(TAG, "Button Hồ Sơ clicked!"); // Ghi log khi nhấn nút Hồ Sơ
             openActivity(hoso.class);
         });
-
+        buttonLogout.setOnClickListener(view -> {
+            Log.d(TAG, "Button Hồ Sơ clicked!"); // Ghi log khi nhấn nút Hồ Sơ
+            openActivity(DangNhap.class);
+        });
 //        buttonOrders.setOnClickListener(view -> {
 //            Log.d(TAG, "Button Đơn Hàng clicked!"); // Ghi log khi nhấn nút Đơn Hàng
 //            openActivity(OrdersActivity.class);

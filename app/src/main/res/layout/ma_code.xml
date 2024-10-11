@@ -6,31 +6,20 @@
     android:orientation="vertical"
     android:gravity="center"
     android:layout_marginLeft="30dp"
-    android:layout_marginRight="30dp"
-    >
-    <!--    // nut quay tro lai man hinh-->
+    android:layout_marginRight="30dp">
+
+    <!-- Nút quay lại màn hình trước -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
+        android:orientation="vertical">
 
-        >
-
-        <TextView
-            android:id="@+id/comback"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textColor="@android:color/black"
-            android:layout_marginTop="40dp"
-            android:gravity="center"
-            android:text="&lt;"
-            android:textSize="30sp"
-            android:paddingLeft="12dp"
-            android:paddingRight="12dp"
-            android:textColorHint="@color/white"
-            android:background="@drawable/rounded_background"
-            android:layout_gravity="left"
-            />
+        <ImageButton
+            android:id="@+id/btn_back"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/icback"
+            android:contentDescription="Quay lại" />
     </LinearLayout>
 
     <LinearLayout
@@ -38,8 +27,7 @@
         android:layout_height="wrap_content"
         android:orientation="vertical"
         android:layout_marginTop="50dp"
-        android:layout_marginBottom="30dp"
-        >
+        android:layout_marginBottom="30dp">
 
         <TextView
             android:layout_width="match_parent"
@@ -48,46 +36,25 @@
             android:textSize="30sp"
             android:layout_marginTop="30dp"
             android:layout_marginBottom="20dp"
-            />
+            android:fontFamily="fontxin" />
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Vui lòng nhập mã xác minh chúng tôi đã gửi đến địa chỉ email của bạn."
+            android:text="Vui lòng nhập mã xác minh mà chúng tôi đã gửi đến địa chỉ email của bạn."
             android:textSize="18sp"
             android:layout_marginBottom="80dp"
-            />
-
+            android:fontFamily="fontxin" />
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
             android:gravity="center"
-            android:layout_marginBottom="50dp"
-            >
-            <EditText
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginEnd="8dp"
-                android:background="@drawable/input_circle"
-                android:inputType="number"
-                android:maxLength="1"
-                android:textSize="24sp"
-                android:textColor="@color/black"
-                android:gravity="center" />
+            android:layout_marginBottom="50dp">
 
             <EditText
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginEnd="8dp"
-                android:background="@drawable/input_circle"
-                android:inputType="number"
-                android:textSize="24sp"
-                android:textColor="@color/black"
-                android:gravity="center" />
-
-            <EditText
+                android:id="@+id/code_digit_1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginEnd="8dp"
@@ -97,7 +64,33 @@
                 android:textSize="24sp"
                 android:textColor="@color/black"
                 android:gravity="center"
-                />
+                android:fontFamily="fontxin" />
+
+            <EditText
+                android:id="@+id/code_digit_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:background="@drawable/input_circle"
+                android:inputType="number"
+                android:maxLength="1"
+                android:textSize="24sp"
+                android:textColor="@color/black"
+                android:gravity="center"
+                android:fontFamily="fontxin" />
+
+            <EditText
+                android:id="@+id/code_digit_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:background="@drawable/input_circle"
+                android:inputType="number"
+                android:maxLength="1"
+                android:textSize="24sp"
+                android:textColor="@color/black"
+                android:gravity="center"
+                android:fontFamily="fontxin" />
 
             <EditText
                 android:id="@+id/code_digit_4"
@@ -110,7 +103,7 @@
                 android:textSize="24sp"
                 android:textColor="@color/black"
                 android:gravity="center"
-                />
+                android:fontFamily="fontxin" />
         </LinearLayout>
 
         <LinearLayout
@@ -118,20 +111,32 @@
             android:layout_height="wrap_content"
             android:orientation="horizontal"
             android:gravity="left"
-            android:layout_marginBottom="50dp"
-            >
+            android:layout_marginBottom="50dp">
+
             <TextView
-                android:layout_marginLeft="30dp"
+                android:id="@+id/timerTextView"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Gui lai sau 10S"
+                android:layout_marginLeft="30dp"
                 android:layout_marginRight="30dp"
-                android:textSize="20dp"
+                android:textSize="20sp"
                 android:textColor="#B0BEC5"
-                />
+                android:layout_marginBottom="50dp"
+                android:fontFamily="fontxin" />
+            <TextView
+                android:id="@+id/resendCodeTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Gửi lại mã"
+                android:textSize="18sp"
+                android:textColor="#8E8585"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:fontFamily="fontxin" />
+
         </LinearLayout>
-
-
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -139,11 +144,11 @@
             android:orientation="vertical"
             android:gravity="center"
             android:layout_marginBottom="40dp">
-
             <Button
+                android:id="@+id/btn_confirm"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Confirm"
+                android:text="Xác nhận"
                 android:textSize="18sp"
                 android:paddingLeft="40dp"
                 android:paddingRight="40dp"
@@ -151,12 +156,7 @@
                 android:paddingBottom="10dp"
                 android:textColor="@color/white"
                 android:background="@drawable/button_border_radius"
-
-                />
+                android:fontFamily="fontxin" />
         </LinearLayout>
-
     </LinearLayout>
-
-
-
 </LinearLayout>

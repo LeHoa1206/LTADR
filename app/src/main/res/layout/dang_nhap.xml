@@ -4,16 +4,14 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:gravity="center"
-    android:background="@color/white"
-    >
+    android:background="@color/white">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
         android:layout_gravity="center_vertical"
-        android:gravity="center"
-        >
+        android:gravity="center">
 
         <TextView
             android:layout_width="wrap_content"
@@ -22,37 +20,37 @@
             android:background="@color/white"
             android:drawablePadding="8dp"
             android:layout_alignParentStart="true"
-            />
+            android:fontFamily="fontxin" />
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="LOGIN ACCOUNT"
+            android:text="TÀI KHOẢN ĐĂNG NHẬP"
             android:textSize="20sp"
             android:textStyle="bold"
             android:layout_gravity="center_horizontal"
             android:textColor="@android:color/black"
             android:layout_marginBottom="100dp"
             android:layout_alignParentStart="true"
-            />
+            android:fontFamily="fontxin" />
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
-        >
+        android:orientation="vertical">
 
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:inputType="text"
-            android:hint=" Username"
+            android:hint="Tên đăng nhập"
             android:layout_marginLeft="25dp"
             android:layout_marginRight="25dp"
             android:backgroundTint="#B0BEC5"
             android:padding="18dp"
             android:layout_marginBottom="20dp"
-            />
+            android:fontFamily="fontxin" />
 
         <RelativeLayout
             android:layout_width="match_parent"
@@ -64,12 +62,13 @@
                 android:id="@+id/edit_text_password"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="Password"
+                android:hint="Mật khẩu"
                 android:inputType="textPassword"
                 android:padding="18dp"
                 android:backgroundTint="#B0BEC5"
                 android:layout_marginTop="10dp"
-                android:layout_marginBottom="20dp" />
+                android:layout_marginBottom="20dp"
+                android:fontFamily="fontxin" />
 
             <ImageView
                 android:id="@+id/login_password"
@@ -78,10 +77,8 @@
                 android:layout_alignParentEnd="true"
                 android:layout_centerVertical="true"
                 android:padding="12dp"
-                android:src="@drawable/eye_close"
-                />
+                android:src="@drawable/eye_close" />
         </RelativeLayout>
-
 
     </LinearLayout>
 
@@ -90,16 +87,17 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:gravity="right"
-        android:layout_marginBottom="50dp"
-        >
+        android:layout_marginBottom="50dp">
+
         <TextView
+            android:id="@+id/Quenmatkhau"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Quen mat khau?"
+            android:text="Quên mật khẩu?"
             android:layout_marginRight="30dp"
-            android:textSize="17dp"
+            android:textSize="17sp"
             android:textColor="@color/black"
-            />
+            android:fontFamily="fontxin" />
     </LinearLayout>
 
     <LinearLayout
@@ -107,14 +105,13 @@
         android:layout_height="wrap_content"
         android:orientation="vertical"
         android:gravity="center"
-        android:layout_marginBottom="20dp"
-
-        >
+        android:layout_marginBottom="20dp">
 
         <Button
+            android:id="@+id/Loginhome"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="DANG NHAP"
+            android:text="ĐĂNG NHẬP"
             android:textSize="18sp"
             android:paddingLeft="40dp"
             android:paddingRight="40dp"
@@ -122,16 +119,14 @@
             android:paddingBottom="10dp"
             android:textColor="@color/white"
             android:background="@drawable/button_border_radius"
-
-            />
+            android:fontFamily="fontxin" />
     </LinearLayout>
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:gravity="center"
-        android:layout_marginBottom="10dp">
-
+        android:gravity="center">
 
     </LinearLayout>
 
@@ -151,15 +146,13 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="20dp"
-            android:drawableEnd="@drawable/google"
-            />
+            android:drawableEnd="@drawable/google" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="20dp"
-            android:drawableEnd="@drawable/git"
-            />
+            android:drawableEnd="@drawable/git" />
     </LinearLayout>
 
     <LinearLayout
@@ -167,20 +160,24 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:gravity="center">
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:text="Ban chua co tai khoan?"
-            android:textSize="18sp"/>
+            android:text="Bạn chưa có tài khoản?"
+            android:textSize="18sp"
+            android:fontFamily="fontxin" />
+
         <TextView
+            android:id="@+id/DangKy"
             android:layout_marginLeft="5dp"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:text="dang ky"
+            android:text="Đăng ký"
             android:textColor="#F00F41"
-            android:textSize="20sp"/>
+            android:textSize="20sp"
+            android:fontFamily="fontxin" />
 
     </LinearLayout>
-
 
 </LinearLayout>
