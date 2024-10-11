@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/white">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+
+            >
+
+            <TextView
+                android:id="@+id/comback"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/black"
+                android:layout_marginTop="40dp"
+                android:gravity="center"
+                android:text="&lt;"
+                android:textSize="30sp"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:textColorHint="@color/white"
+                android:background="@drawable/rounded_background"
+                android:layout_gravity="left"
+                android:layout_marginLeft="30dp"
+                />
+        </LinearLayout>
+
+        <!-- Layout chứa tiêu đề và mô tả -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="50dp"
+            android:layout_marginBottom="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginLeft="30dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Tạo mật khẩu mới"
+                android:textSize="30sp"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="20dp"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Mật khẩu mới của bạn phải khác với mật khẩu đã sử dụng trước đó."
+                android:textSize="18sp"
+                android:layout_marginBottom="80dp"
+                android:textColor="@color/black" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+
+                <!-- EditText để nhập mật khẩu -->
+                <EditText
+                    android:id="@+id/passwordEditText"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:hint="Password"
+                    android:inputType="textPassword"
+                    android:padding="18dp"
+                    android:textSize="16sp"
+                    android:textColor="@color/black"
+                    android:layout_toLeftOf="@id/eyeIcon"
+                    android:layout_alignParentStart="true"
+                    android:drawablePadding="8dp"
+                    android:background="@android:color/transparent"
+                    />
+
+                <!-- Icon con mắt -->
+                <ImageView
+                    android:id="@+id/eyeIcon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:padding="16dp"
+                    android:src="@drawable/eye_close"
+                    android:layout_centerVertical="true"
+                    />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <!-- EditText xác nhận mật khẩu -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp">
+
+
+
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/black"
+                >
+
+                <!-- EditText để nhập mật khẩu -->
+                <EditText
+                    android:id="@+id/confirmPasswordEditText"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:hint="Confirm Password"
+                    android:inputType="textPassword"
+                    android:padding="18dp"
+                    android:textSize="16sp"
+                    android:textColor="@color/black"
+                    android:layout_toLeftOf="@id/eyeIconClose"
+                    android:layout_alignParentStart="true"
+                    android:drawablePadding="8dp"
+                    android:background="@android:color/transparent"
+                    />
+
+                <!-- Icon con mắt -->
+                <ImageView
+                    android:id="@+id/eyeIconClose"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:padding="16dp"
+                    android:src="@drawable/eye_close"
+                    android:layout_centerVertical="true" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <!-- Layout chứa nút đăng nhập -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_marginTop="40dp">
+
+            <Button
+                android:id="@+id/buttonCheck"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Xac nhan"
+                android:textSize="18sp"
+                android:paddingLeft="40dp"
+                android:paddingRight="40dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:textColor="@color/white"
+                android:background="@drawable/button_border_radius" />
+        </LinearLayout>
+
+
+
+
+
+<!--        day chinh la phan khi bam vao xac nhan thi no sex hien thong bao -->
+<!--        mat khau da duoc doi va hay bam quay lai trang chu -->
+        <LinearLayout
+            android:id="@+id/notificationLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:background="@drawable/bottom_border"
+            android:visibility="gone">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/check_change_account"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Mat khau cua ban da duoc cap nhat"
+                android:textSize="25sp"
+                android:gravity="center"
+                android:textColor="@color/black"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="chao mung ban tro lai"
+                android:textSize="18sp"
+                android:textColor="@color/black"
+                android:gravity="center"
+                />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tro lai trang chu"
+                android:padding="10dp"
+                android:background="@drawable/button_border_radius"
+                android:textColor="@color/white"
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+</FrameLayout>
