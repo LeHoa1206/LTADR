@@ -12,10 +12,7 @@
         android:layout_height="wrap_content"
         android:orientation="vertical"
         android:layout_gravity="center_vertical"
-        android:layout_marginTop="10dp"
-        >
-
-
+        android:layout_marginTop="10dp">
 
         <TextView
             android:layout_width="wrap_content"
@@ -23,95 +20,77 @@
             android:textStyle="bold"
             android:layout_gravity="center_horizontal"
             android:textColor="@android:color/black"
-            android:background="@drawable/user_plus"
-            />
+            android:background="@drawable/user_plus" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="CREATE ACCOUNT"
+            android:text="ĐĂNG KÍ TÀI KHOẢN"
             android:textSize="20sp"
             android:textStyle="bold"
             android:layout_gravity="center_horizontal"
             android:textColor="@android:color/black"
-            android:layout_marginBottom="20dp"
-            />
+            android:layout_marginBottom="20dp" />
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:layout_marginBottom="50dp"
-        >
+        android:layout_marginBottom="50dp">
 
         <EditText
+            android:id="@+id/edtName"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Your name"
+            android:hint="Tên của bạn"
             android:inputType="text"
             android:layout_marginLeft="25dp"
             android:layout_marginRight="25dp"
             android:padding="18dp"
-            android:layout_marginTop="10dp"
-            />
-
-        <EditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="Your email address"
-            android:inputType="text"
-            android:layout_marginLeft="25dp"
-            android:layout_marginRight="25dp"
-            android:padding="18dp"
-            android:backgroundTint="@color/black"
             android:layout_marginTop="10dp" />
 
         <EditText
+            android:id="@+id/edtEmail"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Password"
-            android:inputType="text"
+            android:hint="Địa chỉ email của bạn"
+            android:inputType="textEmailAddress"
             android:layout_marginLeft="25dp"
             android:layout_marginRight="25dp"
             android:padding="18dp"
-            android:backgroundTint="#000000"
-            android:layout_marginTop="10dp"
-            />
+            android:layout_marginTop="10dp" />
 
         <EditText
+            android:id="@+id/edtPassword"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Your email address"
-            android:inputType="text"
+            android:hint="Mật khẩu"
+            android:inputType="textPassword"
             android:layout_marginLeft="25dp"
             android:layout_marginRight="25dp"
             android:padding="18dp"
-            android:backgroundTint="@color/black"
-            android:layout_marginTop="10dp"
-            />
+            android:layout_marginTop="10dp" />
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:gravity="center"
-        >
+        android:gravity="center">
 
         <Button
+            android:id="@+id/btnDangKy"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="DANG KY"
+            android:text="Đăng ký"
             android:textSize="18sp"
             android:paddingLeft="40dp"
             android:paddingRight="40dp"
             android:paddingTop="10dp"
             android:paddingBottom="10dp"
             android:textColor="@color/white"
-            android:background="@drawable/button_border_radius"
-
-            />
+            android:background="@drawable/button_border_radius" />
     </LinearLayout>
 
     <LinearLayout
@@ -119,16 +98,14 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:gravity="center"
-        android:layout_marginBottom="20dp"
-        >
+        android:layout_marginBottom="20dp">
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textSize="20sp"
-            android:text="dang nhap voi"
-            android:textColor="@color/white"
-            />
+            android:text="Đăng nhập với"
+            android:textColor="@color/white" />
     </LinearLayout>
 
     <LinearLayout
@@ -136,27 +113,24 @@
         android:layout_height="wrap_content"
         android:gravity="center"
         android:orientation="horizontal"
-        android:layout_marginBottom="40dp"
-        >
+        android:layout_marginBottom="40dp">
 
-        <TextView
+        <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:drawableLeft="@drawable/facebook" />
+            android:src="@drawable/facebook" />
 
-        <TextView
+        <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:drawableLeft="@drawable/git"
-            android:layout_marginLeft="20dp"
-            />
+            android:src="@drawable/git"
+            android:layout_marginLeft="20dp" />
 
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:src="@drawable/google"
-            android:layout_marginLeft="10dp"
-            />
+            android:layout_marginLeft="10dp" />
     </LinearLayout>
 
     <LinearLayout
@@ -164,20 +138,20 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:gravity="center">
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:text="Ban da co tai khoan?"
-            android:textSize="18sp"/>
+            android:text="Bạn đã có tài khoản ? "
+            android:textSize="18sp" />
+
         <TextView
+            android:id="@+id/DangNhap"
             android:layout_marginLeft="5dp"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:text="dang Nhap"
+            android:text="Đăng nhập"
             android:textColor="#F00F41"
-            android:textSize="20sp"/>
-
+            android:textSize="20sp" />
     </LinearLayout>
-
-
 </LinearLayout>

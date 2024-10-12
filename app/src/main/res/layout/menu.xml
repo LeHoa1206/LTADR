@@ -24,7 +24,7 @@
         android:drawablePadding="10dp"
         android:background="?attr/selectableItemBackground"
         android:padding="10dp"
-        android:fontFamily="@font/fontxin" /> <!-- Use custom font -->
+        android:fontFamily="@font/fontxin" /> <!-- Sử dụng phông chữ tùy chỉnh -->
 
     <Button
         android:id="@+id/buttonProfile"
@@ -38,7 +38,7 @@
         android:drawablePadding="10dp"
         android:background="?attr/selectableItemBackground"
         android:padding="10dp"
-        android:fontFamily="@font/fontxin" /> <!-- Use custom font -->
+        android:fontFamily="@font/fontxin" /> <!-- Sử dụng phông chữ tùy chỉnh -->
 
     <Button
         android:id="@+id/buttonOrders"
@@ -51,7 +51,7 @@
         android:drawablePadding="10dp"
         android:background="?attr/selectableItemBackground"
         android:padding="10dp"
-        android:fontFamily="@font/fontxin" /> <!-- Use custom font -->
+        android:fontFamily="@font/fontxin" /> <!-- Sử dụng phông chữ tùy chỉnh -->
 
     <Button
         android:id="@+id/buttonExplore"
@@ -64,7 +64,7 @@
         android:drawablePadding="10dp"
         android:background="?attr/selectableItemBackground"
         android:padding="10dp"
-        android:fontFamily="@font/fontxin" /> <!-- Use custom font -->
+        android:fontFamily="@font/fontxin" /> <!-- Sử dụng phông chữ tùy chỉnh -->
 
     <Button
         android:id="@+id/buttonSettings"
@@ -77,7 +77,7 @@
         android:drawablePadding="10dp"
         android:background="?attr/selectableItemBackground"
         android:padding="10dp"
-        android:fontFamily="@font/fontxin" /> <!-- Use custom font -->
+        android:fontFamily="@font/fontxin" /> <!-- Sử dụng phông chữ tùy chỉnh -->
 
     <Button
         android:id="@+id/buttonSupport"
@@ -90,7 +90,7 @@
         android:drawablePadding="10dp"
         android:background="?attr/selectableItemBackground"
         android:padding="10dp"
-        android:fontFamily="@font/fontxin" /> <!-- Use custom font -->
+        android:fontFamily="@font/fontxin" /> <!-- Sử dụng phông chữ tùy chỉnh -->
 
     <Button
         android:id="@+id/buttonAbout"
@@ -103,5 +103,20 @@
         android:drawablePadding="10dp"
         android:background="?attr/selectableItemBackground"
         android:padding="10dp"
-        android:fontFamily="@font/fontxin" /> <!-- Use custom font -->
+        android:fontFamily="@font/fontxin" /> <!-- Sử dụng phông chữ tùy chỉnh -->
+
+    <!-- Nút Đăng Xuất -->
+    <Button
+        android:id="@+id/buttonLogout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Đăng Xuất"
+        android:textColor="@android:color/black"
+        android:textSize="22sp"
+        android:drawableLeft="@drawable/dangxuat"
+        android:drawablePadding="10dp"
+        android:background="?attr/selectableItemBackground"
+        android:padding="10dp"
+        android:fontFamily="@font/fontxin" /> <!-- Sử dụng phông chữ tùy chỉnh -->
+
 </LinearLayout>
