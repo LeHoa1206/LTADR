@@ -42,7 +42,8 @@
         <activity android:name=".page4_khamphangay" />
         <activity android:name=".page9_Trangchu_Nu" />
         <activity android:name=".page10_Trangchu" />
-
+        <activity android:name=".page11_Trangchu" />
+        <activity android:name=".page12_Trangchu" />
     </application>
 
 </manifest>
