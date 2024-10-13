@@ -15,7 +15,7 @@
 
         <!-- Main activity -->
         <activity
-            android:name=".page23_chitietdonhang3"
+            android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -33,10 +33,20 @@
         <activity android:name=".Taomatkhaumoi" android:exported="true"/>
         <activity android:name=".Quenmatkhau" android:exported="true"/>
         <activity android:name=".resestpasswordsuccess" android:exported="true"/>
-
+        <activity android:name=".page20_donhangcuatoi" />
         <activity android:name=".menu" />
 
-        <!-- Other activities -->
+        <activity android:name=".timkiem" />
+        <activity android:name=".timkiemsanpham" />
+        <activity android:name=".page16_giohangcuaban" />
+        <activity android:name=".page17_thanhtoan1" />
+        <activity android:name=".page22_chitietdonhang2"></activity>
+        <activity android:name=".page21_chitietdonhang1"></activity>
+        <activity android:name=".page23_chitietdonhang3"></activity>
+        <activity android:name=".chitietsanpham"></activity>
+
+        <activity android:name=".page18_thanhtoan2" />
+        <activity android:name=".page19_thanhtoan3" />        <!-- Other activities -->
         <activity android:name=".page2_khamphangay" />
         <activity android:name=".page3_khamphangay" />
         <activity android:name=".page4_khamphangay" />
@@ -44,6 +54,7 @@
         <activity android:name=".page10_Trangchu" />
         <activity android:name=".page11_Trangchu" />
         <activity android:name=".page12_Trangchu" />
+        <activity android:name=".theodoidonhang" />
     </application>
 
 </manifest>

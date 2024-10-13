@@ -127,6 +127,7 @@
                                 android:textSize="13sp" />
 
                             <Button
+                                android:id="@+id/chitiet1"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:text="Chi Tiết"
@@ -246,6 +247,8 @@
                                 android:layout_marginLeft="8dp"/>
 
                             <Button
+                                android:id="@+id/chitiet2"
+
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:text="Chi Tiết"
@@ -365,6 +368,8 @@
                                 android:layout_marginLeft="8dp"/>
 
                             <Button
+                                android:id="@+id/chitiet3"
+
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:text="Chi Tiết"

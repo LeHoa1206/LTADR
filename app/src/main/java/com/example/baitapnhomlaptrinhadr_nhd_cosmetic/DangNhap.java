@@ -22,7 +22,6 @@ public class DangNhap extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.dang_nhap);
         loginhome=findViewById(R.id.Loginhome);
-
         dangky=findViewById(R.id.DangKy);
         quenmatkhau=findViewById(R.id.Quenmatkhau);
         editTextPassword = findViewById(R.id.edit_text_password);

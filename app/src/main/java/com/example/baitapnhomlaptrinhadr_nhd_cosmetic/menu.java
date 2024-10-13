@@ -43,15 +43,15 @@ public class menu extends AppCompatActivity {
             Log.d(TAG, "Button Hồ Sơ clicked!"); // Ghi log khi nhấn nút Hồ Sơ
             openActivity(DangNhap.class);
         });
-//        buttonOrders.setOnClickListener(view -> {
-//            Log.d(TAG, "Button Đơn Hàng clicked!"); // Ghi log khi nhấn nút Đơn Hàng
-//            openActivity(OrdersActivity.class);
-//        });
-//
-//        buttonExplore.setOnClickListener(view -> {
-//            Log.d(TAG, "Button Khám Phá clicked!"); // Ghi log khi nhấn nút Khám Phá
-//            openActivity(ExploreActivity.class);
-//        });
+        buttonOrders.setOnClickListener(view -> {
+            Log.d(TAG, "Button Đơn Hàng clicked!"); // Ghi log khi nhấn nút Đơn Hàng
+            openActivity(page16_giohangcuaban.class);
+        });
+
+        buttonExplore.setOnClickListener(view -> {
+            Log.d(TAG, "Button Khám Phá clicked!"); // Ghi log khi nhấn nút Khám Phá
+            openActivity(timkiem.class);
+        });
 //
         buttonSettings.setOnClickListener(view -> {
             Log.d(TAG, "Button Cài Đặt clicked!"); // Ghi log khi nhấn nút Cài Đặt

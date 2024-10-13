@@ -213,6 +213,7 @@
 
 
                 <LinearLayout
+                    android:id="@+id/sanphambieutuong"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginEnd="16dp"
@@ -823,6 +824,10 @@
                 android:layout_height="300dp"
                 android:src="@drawable/mauanh" />
         </LinearLayout>
+                <View
+                    android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:background="@color/white"/>
 
 
     </LinearLayout>
@@ -854,6 +859,7 @@
             >
 
             <ImageView
+                android:id="@+id/btnhome"
                 android:layout_width="40dp"
                 android:layout_height="40dp"
                 android:src="@drawable/iconhome"
@@ -862,6 +868,7 @@
                 />
 
             <ImageView
+                android:id="@+id/btntimkiem"
                 android:layout_width="40dp"
                 android:layout_height="40dp"
                 android:layout_marginStart="30dp"
@@ -870,6 +877,7 @@
                 android:elevation="4dp" />
 
             <ImageView
+                android:id="@+id/btngiohang"
                 android:layout_width="40dp"
                 android:layout_height="40dp"
                 android:layout_marginStart="30dp"
@@ -878,6 +886,7 @@
                 android:elevation="4dp" />
 
             <ImageView
+                android:id="@+id/btncanhan"
                 android:layout_width="40dp"
                 android:layout_height="40dp"
                 android:layout_marginStart="30dp"

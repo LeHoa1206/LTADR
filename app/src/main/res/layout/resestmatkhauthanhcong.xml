@@ -25,7 +25,7 @@
             android:layout_height="wrap_content"
             android:text="Quay lại trang đăng nhập"
             android:padding="10dp"
-            android:background="@drawable/button_border_radius"
+            android:backgroundTint="@color/black"
             android:textColor="@color/white" />
 
     </LinearLayout>

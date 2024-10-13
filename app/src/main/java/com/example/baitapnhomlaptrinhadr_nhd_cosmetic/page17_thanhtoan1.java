@@ -1,9 +1,11 @@
 package com.example.baitapnhomlaptrinhadr_nhd_cosmetic;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.Spinner;
@@ -17,7 +19,7 @@ public class page17_thanhtoan1 extends AppCompatActivity {
     private Spinner spinnerCountry;
     private RadioGroup rgShippingMethod;
     private Button btnCodecf,btnConfirm;
-
+    ImageView back;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -32,41 +34,19 @@ public class page17_thanhtoan1 extends AppCompatActivity {
         rgShippingMethod = findViewById(R.id.rgShippingMethod);
         btnCodecf = findViewById(R.id.btnCodecf);
         btnConfirm = findViewById(R.id.btnConfirm);
-
-        // Set up button click listener
-        btnConfirm.setOnClickListener(new View.OnClickListener() {
+        back=findViewById(R.id.back);
+        back.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                confirmOrder();
+                finish();
             }
+        });
+        // Set up button click listener
+        btnConfirm.setOnClickListener(view -> {
+            Intent intent = new Intent(page17_thanhtoan1.this, page18_thanhtoan2.class);
+            startActivity(intent);
         });
     }
 
-    private void confirmOrder() {
-        String firstName = etFirstName.getText().toString().trim();
-        String streetName = etStreetName.getText().toString().trim();
-        String city = etCity.getText().toString().trim();
-        String province = etProvince.getText().toString().trim();
-        String phoneNumber = etPhoneNumber.getText().toString().trim();
 
-        // Get selected country from spinner
-        String country = spinnerCountry.getSelectedItem().toString();
-
-        // Get selected shipping method
-        int selectedId = rgShippingMethod.getCheckedRadioButtonId();
-        RadioButton selectedRadioButton = findViewById(selectedId);
-        String shippingMethod = selectedRadioButton != null ? selectedRadioButton.getText().toString() : "";
-        if (firstName.isEmpty() || streetName.isEmpty() || city.isEmpty() ||
-                province.isEmpty() || phoneNumber.isEmpty()) {
-            Toast.makeText(this, "Vui lòng điền đầy đủ thông tin!", Toast.LENGTH_SHORT).show();
-            return;
-        }
-        else {
-            Toast.makeText(this, "Đơn hàng của bạn đã được xác nhận!\n" +
-                    "Tên: " + firstName + "\n" +
-                    "Địa chỉ: " + streetName + ", " + city + ", " + province + ", " + country + "\n" +
-                    "Số điện thoại: " + phoneNumber + "\n" +
-                    "Phương thức vận chuyển: " + shippingMethod, Toast.LENGTH_LONG).show();
-        };
-    }
 }

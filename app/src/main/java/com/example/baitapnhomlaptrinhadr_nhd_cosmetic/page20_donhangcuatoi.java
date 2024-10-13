@@ -1,6 +1,10 @@
 package com.example.baitapnhomlaptrinhadr_nhd_cosmetic;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.ImageView;
+
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.FragmentPagerAdapter;
 import androidx.fragment.app.FragmentStatePagerAdapter;
@@ -16,7 +20,7 @@ public class page20_donhangcuatoi extends AppCompatActivity {
     private TabLayout tabLayout;
     private ViewPager viewPager;
     private FragmentStatePagerAdapter adapter;
-
+    ImageView imgmenu;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,7 +32,7 @@ public class page20_donhangcuatoi extends AppCompatActivity {
 
         // Kết nối TabLayout với ViewPager
         tabLayout.setupWithViewPager(viewPager);
-
+        imgmenu=findViewById(R.id.imgmenu);
         page20_adapter page20Adapter = new page20_adapter(
                 getSupportFragmentManager(),
                 FragmentPagerAdapter.BEHAVIOR_RESUME_ONLY_CURRENT_FRAGMENT
@@ -38,7 +42,14 @@ public class page20_donhangcuatoi extends AppCompatActivity {
         page20Adapter.addFragment(new ChoxulyFragment(), "Chờ xử lý");
         page20Adapter.addFragment(new DagiaoFragment(), "Đã giao");
         page20Adapter.addFragment(new DahuyFragment(), "Đã hủy");
-
+        imgmenu.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // Mở page22 (Activity thứ hai)
+                Intent intent = new Intent(page20_donhangcuatoi.this, menu.class);
+                startActivity(intent);
+            }
+        });
         viewPager.setAdapter(page20Adapter);
     }
 
