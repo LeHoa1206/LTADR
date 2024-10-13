@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<string-array name="category_options">
+    <item>Loại</item> <!-- Đây là mục "Loại" sẽ hiển thị -->
+    <item>Phổ biến</item>
+    <item>Dùng nhiều</item>
+    <item>Giá rẻ</item>
+</string-array>
+</resources>

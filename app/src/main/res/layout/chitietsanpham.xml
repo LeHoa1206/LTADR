@@ -1,0 +1,416 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/background_light"> <!-- Change this to your desired background color or drawable -->
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/add_to_cart_button">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <!-- Product Image -->
+            <ImageView
+                android:id="@+id/product_image"
+                android:layout_width="wrap_content"
+                android:layout_height="300dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/cosmetictitle3" />
+
+            <!-- Product Name -->
+            <TextView
+                android:id="@+id/product_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sữa rửa mặt Melits"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/fontxin" /> <!-- Set custom font -->
+
+            <!-- Product Price -->
+            <TextView
+                android:id="@+id/product_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="$80.00"
+                android:textSize="20sp"
+                android:layout_marginTop="4dp"
+                android:fontFamily="@font/fontxin" /> <!-- Set custom font -->
+
+            <!-- Product Description -->
+            <TextView
+                android:id="@+id/product_description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Mô tả: Sản phẩm giúp làm sạch da mặt hiệu quả..."
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/fontxin" /> <!-- Set custom font -->
+
+            <!-- Size and Color Selection as Combo Boxes -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="16dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Size: "
+                    android:textSize="16sp"
+                    android:fontFamily="@font/fontxin" /> <!-- Set custom font -->
+
+                <Spinner
+                    android:id="@+id/size_spinner"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Màu: "
+                    android:textSize="16sp"
+                    android:layout_marginStart="16dp"
+                    android:fontFamily="@font/fontxin" /> <!-- Set custom font -->
+
+                <Spinner
+                    android:id="@+id/color_spinner"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Đánh giá"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/fontxin" /> <!-- Set custom font -->
+
+            <!-- Product Rating -->
+            <TextView
+                android:id="@+id/rating"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="4.9/5"
+                android:textSize="18sp"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/fontxin" /> <!-- Set custom font -->
+
+            <!-- Star Rating Display -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="⭐⭐⭐⭐⭐"
+                android:textSize="12sp"
+                android:fontFamily="@font/fontxin" /> <!-- Set custom font -->
+
+            <!-- Rating Breakdown -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="8dp">
+
+                <!-- Rating breakdown for each star -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="5⭐"
+                        android:textSize="14sp"
+                        android:fontFamily="@font/fontxin" /> <!-- Set custom font -->
+                    <ProgressBar
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:progress="90" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="90%"
+                        android:textSize="12sp"
+                        android:fontFamily="@font/fontxin" /> <!-- Set custom font -->
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="4⭐"
+                        android:textSize="14sp"
+                        android:fontFamily="@font/fontxin" /> <!-- Set custom font -->
+                    <ProgressBar
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:progress="7" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="7%"
+                        android:textSize="12sp"
+                        android:fontFamily="@font/fontxin" /> <!-- Set custom font -->
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="3⭐"
+                        android:textSize="14sp"
+                        android:fontFamily="@font/fontxin" /> <!-- Set custom font -->
+                    <ProgressBar
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:progress="2" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="2%"
+                        android:textSize="12sp"
+                        android:fontFamily="@font/fontxin" /> <!-- Set custom font -->
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="2⭐"
+                        android:textSize="14sp"
+                        android:fontFamily="@font/fontxin" /> <!-- Set custom font -->
+                    <ProgressBar
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:progress="1" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="1%"
+                        android:textSize="12sp"
+                        android:fontFamily="@font/fontxin" /> <!-- Set custom font -->
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="1⭐"
+                        android:textSize="14sp"
+                        android:fontFamily="@font/fontxin" /> <!-- Set custom font -->
+                    <ProgressBar
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:progress="0" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0%"
+                        android:textSize="12sp"
+                        android:fontFamily="@font/fontxin" /> <!-- Set custom font -->
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <!-- Reviews Title -->
+            <TextView
+                android:id="@+id/reviews_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Đánh giá"
+                android:textSize="20sp"
+                android:layout_marginTop="16dp"
+                android:fontFamily="@font/fontxin" /> <!-- Set custom font -->
+
+            <!-- Review Comments -->
+            <LinearLayout
+                android:id="@+id/review_comments"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="8dp">
+
+                <!-- Comment 1 -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="8dp"
+                    android:background="@android:color/background_light">
+
+                    <ImageView
+                        android:id="@+id/commenter_image_1"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:src="@drawable/iconpersonal"
+                        android:layout_marginEnd="8dp"/>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/commenter_name_1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Người Bình Luận 1"
+                            android:textSize="16sp"
+                            android:textStyle="bold"
+                            android:fontFamily="@font/fontxin" /> <!-- Set custom font -->
+
+                        <TextView
+                            android:id="@+id/comment_text_1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Sản phẩm rất tốt! Tôi thích nó."
+                            android:textSize="14sp"
+                            android:fontFamily="@font/fontxin" /> <!-- Set custom font -->
+
+                        <TextView
+                            android:id="@+id/comment_rating_1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="⭐⭐⭐⭐⭐"
+                            android:textSize="14sp"
+                            android:layout_marginTop="4dp"
+                            android:fontFamily="@font/fontxin" /> <!-- Set custom font -->
+                    </LinearLayout>
+                </LinearLayout>
+
+                <!-- Comment 2 -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="8dp"
+                    android:background="@android:color/background_light">
+
+                    <ImageView
+                        android:id="@+id/commenter_image_2"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:src="@drawable/iconpersonal"
+                        android:layout_marginEnd="8dp"/>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/commenter_name_2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Người Bình Luận 2"
+                            android:textSize="16sp"
+                            android:textStyle="bold"
+                            android:fontFamily="@font/fontxin" /> <!-- Set custom font -->
+
+                        <TextView
+                            android:id="@+id/comment_text_2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Mới mua sản phẩm này, rất hài lòng!"
+                            android:textSize="14sp"
+                            android:fontFamily="@font/fontxin" /> <!-- Set custom font -->
+
+                        <TextView
+                            android:id="@+id/comment_rating_2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="⭐⭐⭐⭐"
+                            android:textSize="14sp"
+                            android:layout_marginTop="4dp"
+                            android:fontFamily="@font/fontxin" /> <!-- Set custom font -->
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- Similar Products Horizontal Scroll -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sản phẩm tương tự"
+                android:textSize="20sp"
+                android:layout_marginTop="16dp"
+                android:fontFamily="@font/fontxin" /> <!-- Set custom font -->
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <!-- Example product 1 -->
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="8dp">
+
+                        <ImageView
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:src="@drawable/sanphambieutuong" /> <!-- Replace with actual product image -->
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Sản phẩm A"
+                            android:textSize="14sp"
+                            android:fontFamily="@font/fontxin" /> <!-- Set custom font -->
+                    </LinearLayout>
+
+                    <!-- Add more products horizontally in the same structure -->
+
+                </LinearLayout>
+            </HorizontalScrollView>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <!-- Add to Cart Button -->
+    <Button
+        android:id="@+id/add_to_cart_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Thêm vào giỏ hàng"
+        android:layout_alignParentBottom="true"
+        android:fontFamily="@font/fontxin" /> <!-- Set custom font -->
+
+</RelativeLayout>

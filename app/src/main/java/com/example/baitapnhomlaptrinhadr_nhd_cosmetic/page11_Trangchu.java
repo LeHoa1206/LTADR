@@ -15,7 +15,7 @@ public class page11_Trangchu extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.page_10_trangchu); // Đảm bảo layout này tồn tại
+        setContentView(R.layout.page11_cosmetic_phukien); // Đảm bảo layout này tồn tại
         btnhomeButton=findViewById(R.id.imgmenu);
         nam=findViewById(R.id.pagenam);
         nu=findViewById(R.id.pagenu);

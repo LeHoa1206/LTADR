@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:padding="15dp"
+
+        >
+            <ImageView
+                android:id="@+id/backButton_page18"
+                android:layout_width="40dp"
+                android:layout_height="39dp"
+                android:layout_marginEnd="70dp"
+                android:src="@drawable/ic_back"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:text="Kiểm tra lại"
+                android:textColor="@color/black"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:layout_marginStart="5dp"/>
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:src="@drawable/barptttt"
+            android:layout_marginBottom="25dp"
+            />
+        <TextView
+    android:textColor="@color/black"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bước 1"
+            android:textSize="18sp"
+            android:layout_marginBottom="8dp" />
+
+        <TextView
+    android:textColor="@color/black"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Vận chuyển"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="28dp"
+            />
+
+        <TextView
+    android:textColor="@color/black"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Họ và tên *"
+            android:padding="4sp"/>
+
+        <EditText
+    android:textColor="@color/black"
+
+            android:id="@+id/etFirstName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8sp"
+            android:hint="Nhập họ và tên"
+            android:inputType="textPersonName"
+            android:minHeight="48dp" />
+
+        <TextView
+    android:textColor="@color/black"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Quốc gia *"
+            android:layout_gravity=""
+            android:padding="4sp"/>
+
+        <Spinner
+            android:id="@+id/spinnerCountry"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:contentDescription="Chọn quốc gia"
+            android:minHeight="48dp" />
+
+        <TextView
+            android:textColor="@color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tên đường phố *"
+            android:layout_marginBottom="4dp" />
+
+        <EditText
+            android:textColor="@color/black"
+            android:id="@+id/etStreetName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:hint="Nhập tên đường phố"
+            android:minHeight="48dp" />
+
+        <TextView
+            android:textColor="@color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Thành phố *"
+            android:layout_marginBottom="4dp" />
+
+        <EditText
+            android:textColor="@color/black"
+            android:id="@+id/etCity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:hint="Nhập thành phố"
+            android:minHeight="48dp" />
+
+        <TextView
+            android:textColor="@color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tỉnh/thành phố *"
+            android:layout_marginBottom="4dp" />
+        <EditText
+            android:textColor="@color/black"
+            android:id="@+id/etProvince"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:hint="Nhập tỉnh/thành phố"
+            android:minHeight="48dp" />
+
+        <TextView
+            android:textColor="@color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Số điện thoại *"
+            android:layout_marginBottom="4dp" />
+
+        <EditText
+            android:textColor="@color/black"
+            android:id="@+id/etPhoneNumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:hint="Nhập số điện thoại"
+            android:inputType="phone"
+            android:minHeight="48dp" />
+
+        <TextView
+            android:textColor="@color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Phương thức vận chuyển"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:padding="5dp" />
+
+        <RadioGroup
+            android:background="@drawable/border"
+            android:id="@+id/rgShippingMethod"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:minHeight="48dp"
+                android:textColor="@color/black"
+                android:text="Free - Giao đến tận nhà"
+                android:padding="15dp"/>
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:minHeight="48dp"
+                android:textColor="@color/black"
+                android:text="$9.80 - Giao đến tận nhà"
+                android:padding="15dp"/>
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="$9.90 - Giao nhanh"
+                android:textColor="@color/black"
+                android:padding="15dp"/>
+        </RadioGroup>
+        <TextView
+    android:textColor="@color/black"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mã phiếu giảm giá"
+            android:textSize="15sp"
+            android:paddingTop="10sp"
+
+                />
+        <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="8dp"
+            android:background="@color/cardview_shadow_end_color">
+
+            <EditText
+                android:textColor="@color/black"
+                android:id="@+id/editTextCode"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="Nhập code vào đây"
+                android:background="@null"
+                android:padding="15dp"
+                android:textColorHint="@android:color/darker_gray"
+                android:inputType="text"
+                />
+
+            <Button
+                android:id="@+id/btnCodecf"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Xác nhận"
+                android:textColor="@android:color/black"
+                android:backgroundTint="@color/cardview_shadow_end_color"
+                android:layout_gravity="center_vertical"/>
+        </LinearLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Địa chỉ thanh toán"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:padding="10dp"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <CheckBox
+                android:layout_width="48dp"
+                android:layout_height="48dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sao chép vị trí địa chỉ từ vận chuyển"
+                android:textColor="#757575"
+                />
+        </LinearLayout>
+        <Button
+            android:id="@+id/btnConfirm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tiếp tục thanh toán"
+            android:textColor="@color/white"
+            android:backgroundTint="@color/black"
+            android:layout_marginTop="30dp"
+            android:padding="10dp"
+            />
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,400 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Hàng trên cùng với nút back và combo -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+        <ImageButton
+            android:id="@+id/btnBack"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/icback" />
+
+        <TextView
+            android:layout_margin="50dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Danh mục sản phẩm"
+            android:textSize="25sp"
+            android:fontFamily="@font/fontxin"
+            android:layout_marginTop="16dp" />
+    </LinearLayout>
+
+    <!-- Hàng chứa kết quả tìm kiếm và lựa chọn loại -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="16dp"
+        android:gravity="center_vertical">
+
+        <!-- Kết quả tìm kiếm ở đầu trái -->
+        <TextView
+            android:id="@+id/tvSearchResults"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Tìm kiếm được 52 kết quả"
+            android:layout_weight="1"
+            android:textSize="15sp"
+            android:fontFamily="@font/fontxin"
+            android:gravity="start"/>
+
+        <!-- Lựa chọn loại ở đầu phải -->
+        <Spinner
+            android:id="@+id/spinner"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:gravity="end"/>
+    </LinearLayout>
+
+    <!-- Danh sách sản phẩm -->
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:columnCount="2"
+        android:rowCount="4"
+        android:layout_gravity="center_horizontal">
+
+        <!-- Mỗi sản phẩm -->
+        <!-- Sản phẩm 1 -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:orientation="vertical"
+            android:padding="8dp">
+
+            <ImageView
+                android:id="@+id/imgProduct1"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:background="@drawable/sanphambieutuong" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Mô tả sản phẩm 1"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/fontxin" />
+
+            <!-- Thêm TextView để hiển thị giá tiền -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Giá: 100.000đ"
+                android:textColor="@android:color/holo_red_dark"
+                android:layout_marginTop="4dp"
+                android:fontFamily="@font/fontxin" />
+
+            <!-- LinearLayout ngang cho đánh giá sao và số lượt đánh giá -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="4dp">
+
+                <!-- Đánh giá sao -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="⭐⭐⭐⭐⭐"
+                    android:textSize="12sp"
+                    android:fontFamily="@font/fontxin" />
+
+                <!-- Số lượt đánh giá -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="(100)"
+                    android:textSize="12sp"
+                    android:layout_marginStart="4dp"
+                    android:fontFamily="@font/fontxin"  />
+            </LinearLayout>
+        </LinearLayout>
+        <!-- Sản phẩm 1 -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:orientation="vertical"
+            android:padding="8dp">
+
+            <ImageView
+                android:id="@+id/imgProduct1"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:background="@drawable/sanphambieutuong" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Mô tả sản phẩm 1"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/fontxin" />
+
+            <!-- Thêm TextView để hiển thị giá tiền -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Giá: 100.000đ"
+                android:textColor="@android:color/holo_red_dark"
+                android:layout_marginTop="4dp"
+                android:fontFamily="@font/fontxin" />
+
+            <!-- LinearLayout ngang cho đánh giá sao và số lượt đánh giá -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="4dp">
+
+                <!-- Đánh giá sao -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="⭐⭐⭐⭐⭐"
+                    android:textSize="12sp"
+                    android:fontFamily="@font/fontxin" />
+
+                <!-- Số lượt đánh giá -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="(100)"
+                    android:textSize="12sp"
+                    android:layout_marginStart="4dp"
+                    android:fontFamily="@font/fontxin"  />
+            </LinearLayout>
+        </LinearLayout>
+        <!-- Sản phẩm 1 -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:orientation="vertical"
+            android:padding="8dp">
+
+            <ImageView
+                android:id="@+id/imgProduct1"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:background="@drawable/sanphambieutuong" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Mô tả sản phẩm 1"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/fontxin" />
+
+            <!-- Thêm TextView để hiển thị giá tiền -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Giá: 100.000đ"
+                android:textColor="@android:color/holo_red_dark"
+                android:layout_marginTop="4dp"
+                android:fontFamily="@font/fontxin" />
+
+            <!-- LinearLayout ngang cho đánh giá sao và số lượt đánh giá -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="4dp">
+
+                <!-- Đánh giá sao -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="⭐⭐⭐⭐⭐"
+                    android:textSize="12sp"
+                    android:fontFamily="@font/fontxin" />
+
+                <!-- Số lượt đánh giá -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="(100)"
+                    android:textSize="12sp"
+                    android:layout_marginStart="4dp"
+                    android:fontFamily="@font/fontxin"  />
+            </LinearLayout>
+        </LinearLayout>
+        <!-- Sản phẩm 1 -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:orientation="vertical"
+            android:padding="8dp">
+
+            <ImageView
+                android:id="@+id/imgProduct1"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:background="@drawable/sanphambieutuong" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Mô tả sản phẩm 1"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/fontxin" />
+
+            <!-- Thêm TextView để hiển thị giá tiền -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Giá: 100.000đ"
+                android:textColor="@android:color/holo_red_dark"
+                android:layout_marginTop="4dp"
+                android:fontFamily="@font/fontxin" />
+
+            <!-- LinearLayout ngang cho đánh giá sao và số lượt đánh giá -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="4dp">
+
+                <!-- Đánh giá sao -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="⭐⭐⭐⭐⭐"
+                    android:textSize="12sp"
+                    android:fontFamily="@font/fontxin" />
+
+                <!-- Số lượt đánh giá -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="(100)"
+                    android:textSize="12sp"
+                    android:layout_marginStart="4dp"
+                    android:fontFamily="@font/fontxin"  />
+            </LinearLayout>
+        </LinearLayout>
+        <!-- Sản phẩm 1 -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:orientation="vertical"
+            android:padding="8dp">
+
+            <ImageView
+                android:id="@+id/imgProduct1"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:background="@drawable/sanphambieutuong" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Mô tả sản phẩm 1"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/fontxin" />
+
+            <!-- Thêm TextView để hiển thị giá tiền -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Giá: 100.000đ"
+                android:textColor="@android:color/holo_red_dark"
+                android:layout_marginTop="4dp"
+                android:fontFamily="@font/fontxin" />
+
+            <!-- LinearLayout ngang cho đánh giá sao và số lượt đánh giá -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="4dp">
+
+                <!-- Đánh giá sao -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="⭐⭐⭐⭐⭐"
+                    android:textSize="12sp"
+                    android:fontFamily="@font/fontxin" />
+
+                <!-- Số lượt đánh giá -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="(100)"
+                    android:textSize="12sp"
+                    android:layout_marginStart="4dp"
+                    android:fontFamily="@font/fontxin"  />
+            </LinearLayout>
+        </LinearLayout>
+        <!-- Sản phẩm 1 -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:orientation="vertical"
+            android:padding="8dp">
+
+            <ImageView
+                android:id="@+id/imgProduct1"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:background="@drawable/sanphambieutuong" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Mô tả sản phẩm 1"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/fontxin" />
+
+            <!-- Thêm TextView để hiển thị giá tiền -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Giá: 100.000đ"
+                android:textColor="@android:color/holo_red_dark"
+                android:layout_marginTop="4dp"
+                android:fontFamily="@font/fontxin" />
+
+            <!-- LinearLayout ngang cho đánh giá sao và số lượt đánh giá -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="4dp">
+
+                <!-- Đánh giá sao -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="⭐⭐⭐⭐⭐"
+                    android:textSize="12sp"
+                    android:fontFamily="@font/fontxin" />
+
+                <!-- Số lượt đánh giá -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="(100)"
+                    android:textSize="12sp"
+                    android:layout_marginStart="4dp"
+                    android:fontFamily="@font/fontxin"  />
+            </LinearLayout>
+        </LinearLayout>
+        <!-- Repeat for all other products with similar changes -->
+    </GridLayout>
+</LinearLayout>

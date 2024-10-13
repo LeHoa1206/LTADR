@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <androidx.drawerlayout.widget.DrawerLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
@@ -5,128 +6,130 @@
     android:id="@+id/drawer_layout"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
-    <androidx.constraintlayout.widget.ConstraintLayout
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="-16dp">
+
+        <!-- Thanh trạng thái với icon thông báo và menu nằm cùng hàng với NHD -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingHorizontal="8dp">
+
+            <!-- Icon menu ở bên trái -->
+            <ImageView
+                android:id="@+id/imgmenu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="Menu"
+                android:onClick="openMenu"
+                android:src="@drawable/iconmenu" />
+
+            <!-- TextView ở giữa -->
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:layout_marginLeft="20dp"
+                android:text="NHD"
+                android:textSize="26sp"
+                android:textStyle="bold" />
+
+            <!-- Icon thông báo ở bên phải -->
+            <ImageView
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:contentDescription="Notification"
+                android:onClick="openMenu"
+                android:src="@drawable/iconnotification" />
+
+        </LinearLayout>
+
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
 
-            android:orientation="vertical"
-            tools:layout_editor_absoluteX="16dp"
-            tools:layout_editor_absoluteY="-16dp">
-
-            <!-- Thanh trạng thái với icon thông báo và menu nằm cùng hàng với NHD -->
+            <!-- Nữ -->
             <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="50dp"
-                android:gravity="center_vertical"
-                android:orientation="horizontal"
-                android:paddingHorizontal="8dp">
 
-                <!-- Icon menu ở bên trái -->
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
                 <ImageView
+                    android:id="@+id/pagenu"
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:contentDescription="Menu"
-                    android:onClick="openMenu"
-                    android:src="@drawable/iconmenu" />
-
-                <!-- TextView ở giữa -->
-                <TextView
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:gravity="center"
-                    android:layout_marginLeft="20dp"
-                    android:text="NHD"
-                    android:textSize="26sp"
-                    android:textStyle="bold" />
-
-                <!-- Icon thông báo ở bên phải -->
-                <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:contentDescription="Notification"
-                    android:onClick="openMenu"
-                    android:src="@drawable/iconnotification" />
-
+                    android:layout_height="55dp"
+                    android:src="@drawable/iconwomen" />
             </LinearLayout>
 
+            <!-- Nam -->
             <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="20dp"
-                android:orientation="horizontal">
 
-                <!-- Nữ -->
-                <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
 
-                    android:layout_width="0dp"
-                    android:layout_height="60dp"
-                    android:layout_weight="1"
-                    android:gravity="center"
-                    android:orientation="vertical">
-
-                    <ImageView
-                        android:id="@+id/pagenu"
-                        android:layout_width="wrap_content"
-                        android:layout_height="55dp"
-                        android:src="@drawable/iconwomen" />
-                </LinearLayout>
-
-                <!-- Nam -->
-                <LinearLayout
-
-                    android:layout_width="0dp"
-                    android:layout_height="60dp"
-                    android:layout_weight="1"
-                    android:gravity="center"
-                    android:orientation="vertical">
-
-                    <ImageView
-                        android:id="@+id/pagenam"
-                        android:layout_width="wrap_content"
-                        android:layout_height="55dp"
-                        android:src="@drawable/iconman" />
-                </LinearLayout>
-
-                <!-- Phụ kiện -->
-                <LinearLayout
-
-                    android:layout_width="0dp"
-                    android:layout_height="60dp"
-                    android:layout_weight="1"
-                    android:gravity="center"
-                    android:orientation="vertical">
-
-                    <ImageView
-                        android:id="@+id/pagephukien"
-                        android:layout_width="wrap_content"
-                        android:layout_height="55dp"
-                        android:src="@drawable/iconaccessory" />
-                </LinearLayout>
-
-                <!-- Làm đẹp -->
-                <LinearLayout
-
-                    android:layout_width="0dp"
-                    android:layout_height="60dp"
-                    android:layout_weight="1"
-                    android:gravity="center"
-                    android:orientation="vertical">
-
-                    <ImageView
-                        android:id="@+id/pagelamdep"
-                        android:layout_width="wrap_content"
-                        android:layout_height="45dp"
-                        android:src="@drawable/iconlip" />
-                </LinearLayout>
+                <ImageView
+                    android:id="@+id/pagenam"
+                    android:layout_width="wrap_content"
+                    android:layout_height="55dp"
+                    android:src="@drawable/iconman" />
             </LinearLayout>
 
+            <!-- Phụ kiện -->
+            <LinearLayout
 
-            <!-- Hình ảnh khám phá sản phẩm -->
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/pagephukien"
+                    android:layout_width="wrap_content"
+                    android:layout_height="55dp"
+                    android:src="@drawable/iconaccessory" />
+            </LinearLayout>
+
+            <!-- Làm đẹp -->
+            <LinearLayout
+
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/pagelamdep"
+                    android:layout_width="wrap_content"
+                    android:layout_height="45dp"
+                    android:src="@drawable/iconlip" />
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <!-- Hình ảnh khám phá sản phẩm -->
         <FrameLayout
             android:layout_width="match_parent"
             android:layout_height="200dp">
@@ -172,7 +175,7 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-            />
+                />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -625,6 +628,7 @@
                 >
 
                 <ImageView
+                    android:id="@+id/btnhome"
                     android:layout_width="40dp"
                     android:layout_height="40dp"
                     android:src="@drawable/iconhome"
@@ -663,12 +667,4 @@
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
 
-<com.google.android.material.navigation.NavigationView
-android:id="@+id/nav_view"
-android:layout_width="wrap_content"
-android:layout_height="match_parent"
-android:layout_gravity="start"
-app:headerLayout="@layout/menu"
- />
-
-    </androidx.drawerlayout.widget.DrawerLayout>
+</androidx.drawerlayout.widget.DrawerLayout>

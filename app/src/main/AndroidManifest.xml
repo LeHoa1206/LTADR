@@ -15,7 +15,7 @@
 
         <!-- Main activity -->
         <activity
-            android:name=".MainActivity"
+            android:name=".page23_chitietdonhang3"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -42,7 +42,8 @@
         <activity android:name=".page4_khamphangay" />
         <activity android:name=".page9_Trangchu_Nu" />
         <activity android:name=".page10_Trangchu" />
-
+        <activity android:name=".page11_Trangchu" />
+        <activity android:name=".page12_Trangchu" />
     </application>
 
 </manifest>

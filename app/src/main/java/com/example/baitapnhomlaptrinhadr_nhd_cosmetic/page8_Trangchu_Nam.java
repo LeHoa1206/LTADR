@@ -16,7 +16,7 @@ public class page8_Trangchu_Nam extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.page8_cosmetic_nu);
+        setContentView(R.layout.page8_cosmetic_nam);
         img_menu = findViewById(R.id.imgmenu);
         btnhomeButton = findViewById(R.id.btnhome);
         drawerLayout = findViewById(R.id.drawer_layout);

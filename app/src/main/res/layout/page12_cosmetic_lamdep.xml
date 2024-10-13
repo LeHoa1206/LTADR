@@ -21,7 +21,7 @@
             <!-- Thanh trạng thái với icon thông báo và menu nằm cùng hàng với NHD -->
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="50dp"
+                android:layout_height="70dp"
                 android:gravity="center_vertical"
                 android:orientation="horizontal"
                 android:paddingHorizontal="8dp">
@@ -48,8 +48,8 @@
 
                 <!-- Icon thông báo ở bên phải -->
                 <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
                     android:contentDescription="Notification"
                     android:onClick="openMenu"
                     android:src="@drawable/iconnotification" />
@@ -645,6 +645,7 @@
                         android:elevation="4dp" />
 
                     <ImageView
+                        android:id="@+id/pagegiohang"
                         android:layout_width="40dp"
                         android:layout_height="40dp"
                         android:layout_marginStart="30dp"

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/cash_method" android:title="Tiền mặt" android:icon="@drawable/cash"></item>
+    <item android:id="@+id/credit_card_method" android:title="Thẻ tín dụng" android:icon="@drawable/creditcard"></item>
+    <item android:id="@+id/another_method" android:title="Khác" android:icon="@drawable/tripplecircle"></item>
+</menu>
