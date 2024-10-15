@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F5F5"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Header với hình ảnh và tiêu đề -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFF1E6"
+        android:padding="16dp"
+        android:layout_marginBottom="16dp"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/iv_cosmetics"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+ />
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/iv_cosmetics"
+            android:layout_marginTop="-74dp"
+            android:paddingTop="8dp"
+            android:text="Tích Điểm"
+            android:textColor="#000"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <!-- Hiển thị số điểm hiện tại của người dùng -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#FFFFFF"
+        android:elevation="4dp"
+        android:padding="16dp"
+        android:layout_marginBottom="16dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Điểm của bạn:"
+            android:textSize="18sp"
+            android:textColor="#444"
+            android:paddingBottom="8dp"/>
+
+        <TextView
+            android:id="@+id/tv_current_points"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1200 điểm"
+            android:textSize="36sp"
+            android:textColor="#FF4081"
+            android:textStyle="bold"/>
+    </LinearLayout>
+
+    <!-- Thanh tiến trình tích điểm -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tiến trình đạt phần thưởng tiếp theo:"
+        android:textSize="16sp"
+        android:textColor="#666"
+        android:paddingBottom="8dp" />
+
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:progress="60"
+        android:max="100"
+        android:progressTint="#FF4081"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- Danh sách các phần thưởng có thể đổi -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Phần thưởng:"
+        android:textSize="18sp"
+        android:textColor="#444"
+        android:paddingBottom="8dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#FFFFFF"
+        android:elevation="4dp"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/tv_reward1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tặng son môi - 1000 điểm"
+            android:textSize="16sp"
+            android:textColor="#444"
+            android:paddingBottom="8dp"/>
+
+        <TextView
+            android:id="@+id/tv_reward2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tặng kem dưỡng da - 2000 điểm"
+            android:textSize="16sp"
+            android:textColor="#444"
+            android:paddingBottom="8dp"/>
+
+        <TextView
+            android:id="@+id/tv_reward3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Phiếu giảm giá 500k - 5000 điểm"
+            android:textSize="16sp"
+            android:textColor="#444"/>
+    </LinearLayout>
+
+    <!-- Thêm phần đổi điểm ra voucher -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Đổi điểm lấy voucher:"
+        android:textSize="18sp"
+        android:textColor="#444"
+        android:paddingBottom="8dp"
+        android:layout_marginTop="16dp"/>
+
+    <!-- Spinner chọn voucher -->
+    <Spinner
+        android:id="@+id/spinner_vouchers"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="12dp"/>
+
+    <!-- Nút đổi điểm lấy voucher -->
+    <Button
+        android:id="@+id/btn_redeem_voucher"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Đổi điểm lấy voucher"
+        android:backgroundTint="#FF4081"
+        android:textColor="#FFF"
+        android:textSize="18sp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- Nút quét mã QR -->
+    <Button
+        android:id="@+id/btn_scan_qr"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Quét mã QR để tích điểm"
+        android:backgroundTint="#FF4081"
+        android:textColor="#FFF"
+        android:textSize="18sp"/>
+</LinearLayout>

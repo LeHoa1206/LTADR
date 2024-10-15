@@ -10,7 +10,7 @@ import androidx.drawerlayout.widget.DrawerLayout;
 import com.google.android.material.navigation.NavigationView;
 
 public class page10_Trangchu extends AppCompatActivity {
-    ImageView btnhomeButton,btnhoso,img_menu;
+    ImageView btnhomeButton,btnhoso,img_menu,tichdiem;
     LinearLayout sanphambieutuong;
     DrawerLayout drawerLayout; // Khai báo DrawerLayout
     NavigationView navigationView; // Khai báo NavigationView
@@ -28,6 +28,7 @@ public class page10_Trangchu extends AppCompatActivity {
         lamdep=findViewById(R.id.pagelamdep);
         giohang=findViewById(R.id.btngiohang);
         canhan=findViewById(R.id.btncanhan);
+        tichdiem=findViewById(R.id.tichdiem);
 
         // Khởi tạo các thành phần
         drawerLayout = findViewById(R.id.drawer_layout);
@@ -65,6 +66,10 @@ public class page10_Trangchu extends AppCompatActivity {
         });
         sanphambieutuong.setOnClickListener(view -> {
             Intent intent = new Intent(page10_Trangchu.this, chitietsanpham.class);
+            startActivity(intent);
+        });
+        tichdiem.setOnClickListener(view -> {
+            Intent intent = new Intent(page10_Trangchu.this, tichdiem.class);
             startActivity(intent);
         });
 //        btnhomeButton.setOnClickListener(view -> {

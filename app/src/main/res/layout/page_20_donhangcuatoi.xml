@@ -36,13 +36,14 @@
             android:textSize="26sp"
             android:textStyle="bold" />
 
-        <!-- Icon thông báo ở bên phải -->
         <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:id="@+id/tichdiem"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
             android:contentDescription="Notification"
-            android:onClick="openNotification"
-            android:src="@drawable/iconnotification" />
+            android:onClick="openMenu"
+            android:src="@drawable/tichdiem" />
+
     </LinearLayout>
 
     <androidx.viewpager.widget.ViewPager

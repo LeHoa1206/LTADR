@@ -35,6 +35,7 @@
         <activity android:name=".resestpasswordsuccess" android:exported="true"/>
         <activity android:name=".page20_donhangcuatoi" />
         <activity android:name=".menu" />
+        <activity android:name=".tichdiem" />
 
         <activity android:name=".timkiem" />
         <activity android:name=".timkiemsanpham" />
@@ -44,6 +45,7 @@
         <activity android:name=".page21_chitietdonhang1"></activity>
         <activity android:name=".page23_chitietdonhang3"></activity>
         <activity android:name=".chitietsanpham"></activity>
+        <activity android:name=".doidiemlayvoucher" />
 
         <activity android:name=".page18_thanhtoan2" />
         <activity android:name=".page19_thanhtoan3" />        <!-- Other activities -->

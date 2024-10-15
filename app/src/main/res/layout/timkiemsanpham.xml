@@ -2,6 +2,7 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/white"
     android:orientation="vertical"
     android:padding="16dp">
 
@@ -12,11 +13,14 @@
         android:orientation="horizontal"
         android:gravity="center_vertical">
 
-        <ImageButton
+        <ImageView
             android:id="@+id/btnBack"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:src="@drawable/icback" />
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:src="@drawable/icback"
+            android:contentDescription="Back Button"
+            android:layout_margin="16dp"
+             />
 
         <TextView
             android:layout_margin="50dp"

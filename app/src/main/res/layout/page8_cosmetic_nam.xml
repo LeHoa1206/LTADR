@@ -48,12 +48,12 @@
 
             <!-- Icon thông báo ở bên phải -->
             <ImageView
+                android:id="@+id/tichdiem"
                 android:layout_width="70dp"
                 android:layout_height="70dp"
                 android:contentDescription="Notification"
                 android:onClick="openMenu"
-                android:src="@drawable/iconnotification" />
-
+                android:src="@drawable/tichdiem" />
         </LinearLayout>
 
 
