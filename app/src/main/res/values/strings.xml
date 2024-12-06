@@ -1,8 +1,8 @@
 <resources>
-    <string name="app_name">NHD</string>
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="app_name">Tên Ứng Dụng</string>
+    <string-array name="trangThai_array">
+        <item>Đã giao</item>
+        <item>Đang xử lý</item>
+        <item>Đã hủy</item>
+    </string-array>
 </resources>
-
-
-

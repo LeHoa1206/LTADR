@@ -8,6 +8,8 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.example.baitapnhomlaptrinhadr_nhd_cosmetic.Chatactivity.SignupActivity;
+
 public class page4_khamphangay extends AppCompatActivity {
     Button btnforward;
     protected void onCreate(Bundle savedInstanceState) {
@@ -18,7 +20,7 @@ public class page4_khamphangay extends AppCompatActivity {
         btnforward.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent= new Intent(page4_khamphangay.this, DangNhap.class);
+                Intent intent= new Intent(page4_khamphangay.this, SignupActivity.class);
                 startActivity(intent);
 
             }

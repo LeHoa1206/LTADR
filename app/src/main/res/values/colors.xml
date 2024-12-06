@@ -2,4 +2,21 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <!-- Màu nền cho CardView -->
+    <color name="cardBackground">#FFFFFF</color>
+
+    <!-- Màu chính cho tiêu đề -->
+    <color name="textPrimary">#2C3E50</color> <!-- Màu xám đậm gần đen -->
+
+    <!-- Màu phụ cho các thông tin -->
+    <color name="textSecondary">#7F8C8D</color> <!-- Màu xám trung bình -->
+
+    <!-- Màu cho trạng thái (ví dụ: xanh lá cây cho hoàn thành) -->
+    <color name="statusColor">#3498DB</color> <!-- Màu xanh dương đẹp mắt -->
+
+    <!-- Màu cho nút Sửa -->
+    <color name="primaryButton">#2980B9</color> <!-- Màu xanh dương đậm -->
+
+    <!-- Màu cho nút Xóa -->
+    <color name="dangerButton">#E74C3C</color> <!-- Màu đỏ nổi bật -->
 </resources>

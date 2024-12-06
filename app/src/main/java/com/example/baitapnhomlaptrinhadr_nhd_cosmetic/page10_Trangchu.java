@@ -21,7 +21,7 @@ public class page10_Trangchu extends AppCompatActivity {
         setContentView(R.layout.page_10_trangchu); // Đảm bảo layout này tồn tại
         btnhomeButton=findViewById(R.id.imgmenu);
         timkiem=findViewById(R.id.btntimkiem);
-        sanphambieutuong=findViewById(R.id.sanphambieutuong);
+//        sanphambieutuong=findViewById(R.id.sanphambieutuong);
         nam=findViewById(R.id.pagenam);
         nu=findViewById(R.id.pagenu);
         phukien=findViewById(R.id.pagephukien);
@@ -41,11 +41,11 @@ public class page10_Trangchu extends AppCompatActivity {
             startActivity(intent);
         });
         nam.setOnClickListener(view -> {
-            Intent intent = new Intent(page10_Trangchu.this, page8_Trangchu_Nam.class);
+            Intent intent = new Intent(page10_Trangchu.this, page9_Trangchu_Nam.class);
             startActivity(intent);
         });
         nu.setOnClickListener(view -> {
-            Intent intent = new Intent(page10_Trangchu.this, page9_Trangchu_Nu.class);
+            Intent intent = new Intent(page10_Trangchu.this, page8_Trangchu_Nu.class);
             startActivity(intent);
         });
         phukien.setOnClickListener(view -> {

@@ -41,7 +41,7 @@
         android:layout_marginBottom="50dp">
 
         <EditText
-            android:id="@+id/edtName"
+            android:id="@+id/name"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Tên của bạn"
@@ -52,7 +52,7 @@
             android:layout_marginTop="10dp" />
 
         <EditText
-            android:id="@+id/edtEmail"
+            android:id="@+id/tendangnhap"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Địa chỉ email của bạn"
@@ -63,7 +63,7 @@
             android:layout_marginTop="10dp" />
 
         <EditText
-            android:id="@+id/edtPassword"
+            android:id="@+id/matkhau"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Mật khẩu"

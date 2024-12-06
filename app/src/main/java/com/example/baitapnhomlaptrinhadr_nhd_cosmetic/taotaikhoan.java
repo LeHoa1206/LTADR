@@ -9,6 +9,9 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
+
+import com.example.baitapnhomlaptrinhadr_nhd_cosmetic.Chatactivity.SignupActivity;
+
 public class taotaikhoan extends AppCompatActivity {
 
     // Khai báo các view
@@ -22,9 +25,9 @@ public class taotaikhoan extends AppCompatActivity {
         setContentView(R.layout.tao_tai_khoan);  // Đảm bảo file XML layout tương ứng
 
         // Ánh xạ các view từ XML
-        edtName = findViewById(R.id.edtName);
-        edtEmail = findViewById(R.id.edtEmail);
-        edtPassword = findViewById(R.id.edtPassword);
+//        edtName = findViewById(R.id.edtName);
+//        edtEmail = findViewById(R.id.edtEmail);
+//        edtPassword = findViewById(R.id.edtPassword);
         btnDangKy = findViewById(R.id.btnDangKy);
         tvDangNhap = findViewById(R.id.DangNhap);
 
@@ -44,7 +47,7 @@ public class taotaikhoan extends AppCompatActivity {
                     Toast.makeText(taotaikhoan.this, "Đăng ký thành công!", Toast.LENGTH_SHORT).show();
 
                     // Chuyển đến màn hình đăng nhập sau khi đăng ký thành công
-                    Intent intent = new Intent(taotaikhoan.this, DangNhap.class);  // Màn hình LoginActivity
+                    Intent intent = new Intent(taotaikhoan.this, SignupActivity.class);  // Màn hình LoginActivity
                     startActivity(intent);
                     finish(); // Đóng activity hiện tại để không quay lại được trang đăng ký
                 }
@@ -56,7 +59,7 @@ public class taotaikhoan extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 // Chuyển đến màn hình đăng nhập
-                Intent intent = new Intent(taotaikhoan.this, DangNhap.class);  // Màn hình LoginActivity
+                Intent intent = new Intent(taotaikhoan.this, SignupActivity.class);  // Màn hình LoginActivity
                 startActivity(intent);
                 finish(); // Đóng activity hiện tại
             }

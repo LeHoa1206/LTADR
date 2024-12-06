@@ -26,7 +26,7 @@ public class timkiemsanpham extends AppCompatActivity {
         // Ánh xạ các thành phần giao diện
 
 
-        btnback=findViewById(R.id.btnBack);
+//        btnback=findViewById(R.id.btnBack);
 
         // Sự kiện khi nhấn nút quay lại
         btnback.setOnClickListener(new View.OnClickListener() {

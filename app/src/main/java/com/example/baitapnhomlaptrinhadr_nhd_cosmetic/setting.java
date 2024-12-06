@@ -1,11 +1,8 @@
 package com.example.baitapnhomlaptrinhadr_nhd_cosmetic;
 
 import android.content.Intent;
-import android.media.Image;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.AdapterView;
-import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.LinearLayout;
 import android.widget.Spinner;
@@ -13,6 +10,8 @@ import android.widget.Switch;
 import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
+
+import com.example.baitapnhomlaptrinhadr_nhd_cosmetic.Chatactivity.hotro;
 
 public class setting extends AppCompatActivity {
 

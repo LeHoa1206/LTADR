@@ -1,0 +1,49 @@
+{
+  "project_info": {
+    "project_number": "919440058307",
+    "firebase_url": "https://nhddchat-default-rtdb.firebaseio.com",
+    "project_id": "nhddchat",
+    "storage_bucket": "nhddchat.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:919440058307:android:c2d530a3a6d88db4a6ff76",
+        "android_client_info": {
+          "package_name": "com.example.baitapnhomlaptrinhadr_nhd_cosmetic"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB6ynUm15hjXTHrqaUSfgmWlL1z5tGqtW0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:919440058307:android:b2ad788c31a07674a6ff76",
+        "android_client_info": {
+          "package_name": "com.example.baitapnhomlaptrinhadr_nhd_cosmetic.Chatactivity"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB6ynUm15hjXTHrqaUSfgmWlL1z5tGqtW0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

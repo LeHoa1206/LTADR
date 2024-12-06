@@ -10,6 +10,8 @@ import android.widget.ImageView;
 import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.example.baitapnhomlaptrinhadr_nhd_cosmetic.Chatactivity.SignupActivity;
+
 public class Quenmatkhau extends AppCompatActivity {
     private EditText editEmail; // Trường nhập email
     private Button btnConfirm; // Nút xác nhận
@@ -38,7 +40,7 @@ public class Quenmatkhau extends AppCompatActivity {
         imgBack.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(Quenmatkhau.this, DangNhap.class);
+                Intent intent = new Intent(Quenmatkhau.this, SignupActivity.class);
                 startActivity(intent);
                 finish(); // Kết thúc activity hiện tại
             }

@@ -6,6 +6,9 @@ import android.util.Log;  // Nhập khẩu lớp Log
 import android.widget.Button;
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.example.baitapnhomlaptrinhadr_nhd_cosmetic.Chatactivity.SignupActivity;
+import com.example.baitapnhomlaptrinhadr_nhd_cosmetic.Chatactivity.hotro;
+
 public class menu extends AppCompatActivity {
     Button buttonTrangChu,buttonLogout, buttonProfile, buttonOrders, buttonExplore, buttonSettings, buttonSupport, buttonAbout;
 
@@ -32,7 +35,7 @@ public class menu extends AppCompatActivity {
         // Thiết lập sự kiện nhấn nút
         buttonTrangChu.setOnClickListener(view -> {
             Log.d(TAG, "Button Trang Chủ clicked!"); // Ghi log khi nhấn nút Trang Chủ
-            openActivity(page10_Trangchu.class);
+            openActivity(MainActivity.class);
         });
 
         buttonProfile.setOnClickListener(view -> {
@@ -41,7 +44,7 @@ public class menu extends AppCompatActivity {
         });
         buttonLogout.setOnClickListener(view -> {
             Log.d(TAG, "Button Hồ Sơ clicked!"); // Ghi log khi nhấn nút Hồ Sơ
-            openActivity(DangNhap.class);
+            openActivity(SignupActivity.class);
         });
         buttonOrders.setOnClickListener(view -> {
             Log.d(TAG, "Button Đơn Hàng clicked!"); // Ghi log khi nhấn nút Đơn Hàng

@@ -48,7 +48,7 @@
                         android:text="NHD"
                         android:textSize="26sp"
 
-                    android:textStyle="bold" />
+                        android:textStyle="bold" />
 
                     <!-- Icon thông báo ở bên phải -->
                     <ImageView
@@ -65,363 +65,152 @@
 
 
 
-    <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
-            android:orientation="horizontal">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:orientation="horizontal">
 
-            <!-- Nữ -->
-            <LinearLayout
+                    <!-- Nữ -->
+                    <LinearLayout
 
-                android:layout_width="0dp"
-                android:layout_height="60dp"
-                android:layout_weight="1"
-                android:gravity="center"
-                android:orientation="vertical">
+                        android:layout_width="0dp"
+                        android:layout_height="60dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical">
 
-                <ImageView
-                    android:id="@+id/pagenu"
-                    android:layout_width="wrap_content"
-                    android:layout_height="55dp"
-                    android:src="@drawable/iconwomen" />
-            </LinearLayout>
+                        <ImageView
+                            android:id="@+id/pagenu"
+                            android:layout_width="wrap_content"
+                            android:layout_height="55dp"
+                            android:src="@drawable/iconwomen" />
+                    </LinearLayout>
 
-            <!-- Nam -->
-            <LinearLayout
+                    <!-- Nam -->
+                    <LinearLayout
 
-                android:layout_width="0dp"
-                android:layout_height="60dp"
-                android:layout_weight="1"
-                android:gravity="center"
-                android:orientation="vertical">
+                        android:layout_width="0dp"
+                        android:layout_height="60dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical">
 
-                <ImageView
-                    android:id="@+id/pagenam"
-                    android:layout_width="wrap_content"
-                    android:layout_height="55dp"
-                    android:src="@drawable/iconman" />
-            </LinearLayout>
+                        <ImageView
+                            android:id="@+id/pagenam"
+                            android:layout_width="wrap_content"
+                            android:layout_height="55dp"
+                            android:src="@drawable/iconman" />
+                    </LinearLayout>
 
-            <!-- Phụ kiện -->
-            <LinearLayout
+                    <!-- Phụ kiện -->
+                    <LinearLayout
 
-                android:layout_width="0dp"
-                android:layout_height="60dp"
-                android:layout_weight="1"
-                android:gravity="center"
-                android:orientation="vertical">
+                        android:layout_width="0dp"
+                        android:layout_height="60dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical">
 
-                <ImageView
-                    android:id="@+id/pagephukien"
-                    android:layout_width="wrap_content"
-                    android:layout_height="55dp"
-                    android:src="@drawable/iconaccessory" />
-            </LinearLayout>
+                        <ImageView
+                            android:id="@+id/pagephukien"
+                            android:layout_width="wrap_content"
+                            android:layout_height="55dp"
+                            android:src="@drawable/iconaccessory" />
+                    </LinearLayout>
 
-            <!-- Làm đẹp -->
-            <LinearLayout
+                    <!-- Làm đẹp -->
+                    <LinearLayout
 
-                android:layout_width="0dp"
-                android:layout_height="60dp"
-                android:layout_weight="1"
-                android:gravity="center"
-                android:orientation="vertical">
+                        android:layout_width="0dp"
+                        android:layout_height="60dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical">
 
-                <ImageView
-                    android:id="@+id/pagelamdep"
-                    android:layout_width="wrap_content"
-                    android:layout_height="45dp"
-                    android:src="@drawable/iconlip" />
-            </LinearLayout>
-        </LinearLayout>
+                        <ImageView
+                            android:id="@+id/pagelamdep"
+                            android:layout_width="wrap_content"
+                            android:layout_height="45dp"
+                            android:src="@drawable/iconlip" />
+                    </LinearLayout>
+                </LinearLayout>
 
-        <!-- Hình ảnh khám phá sản phẩm -->
-        <FrameLayout
-            android:layout_width="match_parent"
-            android:layout_height="200dp">
+                <!-- Hình ảnh khám phá sản phẩm -->
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp">
 
-            <!-- Hình ảnh -->
-            <ImageView
-                android:id="@+id/product_image"
-                android:layout_width="match_parent"
-                android:layout_height="200dp"
-                android:layout_margin="10dp"
-                android:scaleType="centerCrop"
-                android:src="@drawable/cosmetickhampha" />
+                    <!-- Hình ảnh -->
+                    <ImageView
+                        android:id="@+id/product_image"
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:layout_margin="10dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/cosmetickhampha" />
 
-            <!-- Văn bản đè lên hình ảnh -->
-            <TextView
-                android:id="@+id/product_title"
+                    <!-- Văn bản đè lên hình ảnh -->
+                    <TextView
+                        android:id="@+id/product_title"
 
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:fontFamily="@font/fontxin"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/fontxin"
 
-                android:background="#80000000"
-                android:padding="10dp"
-                android:text="Khám phá sản phẩm ngay"
-                android:textColor="#FFFFFF"
-                android:textSize="18sp"
-                android:textStyle="bold" />
-        </FrameLayout>
-
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:layout_marginTop="10dp">
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Sản phẩm bán chạy"
-                android:fontFamily="@font/fontxin"
-
-                android:textSize="33sp"
-                android:textStyle="bold" />
-
-            <TextView
-                android:layout_width="0dp"
-                android:fontFamily="@font/fontxin"
-
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Xem tất cả"
-                android:textSize="16sp"
-                android:fontFamily="@font/fontxin"
-
-                android:layout_marginRight="10dp"
-                android:textStyle="normal" />
-        </LinearLayout>
-
-
-        <!-- Thanh ngang trượt nhiều sản phẩm -->
-        <HorizontalScrollView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal">
+                        android:background="#80000000"
+                        android:padding="10dp"
+                        android:text="Khám phá sản phẩm ngay"
+                        android:textColor="#FFFFFF"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+                </FrameLayout>
 
 
                 <LinearLayout
-                    android:id="@+id/sanphambieutuong"
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginEnd="16dp"
-                    android:orientation="vertical">
-
-                    <ImageView
-                        android:layout_width="100dp"
-                        android:layout_height="150dp"
-                        android:src="@drawable/sanphammau2" />
+                    android:orientation="horizontal"
+                    android:layout_marginTop="10dp">
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:gravity="center"
+                        android:text="Sản phẩm bán chạy"
                         android:fontFamily="@font/fontxin"
-                        android:text="Sữa rửa mặt" />
+
+                        android:textSize="33sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:fontFamily="@font/fontxin"
+
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:gravity="center"
+                        android:text="Xem tất cả"
+                        android:textSize="16sp"
                         android:fontFamily="@font/fontxin"
-                        android:text="$ 80.00" />
+
+                        android:layout_marginRight="10dp"
+                        android:textStyle="normal" />
                 </LinearLayout>
-                <LinearLayout
-                    android:layout_width="wrap_content"
+
+
+                <!-- Thanh ngang trượt nhiều sản phẩm -->
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recyclerViewSPBC"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginEnd="16dp"
-                    android:orientation="vertical">
-
-                    <ImageView
-                        android:layout_width="100dp"
-                        android:layout_height="150dp"
-                        android:src="@drawable/sanphammau2" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:gravity="center"
-                        android:fontFamily="@font/fontxin"
-                        android:text="Sữa rửa mặt" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:gravity="center"
-                        android:fontFamily="@font/fontxin"
-                        android:text="$ 80.00" />
-                </LinearLayout>
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginEnd="16dp"
-                    android:orientation="vertical">
-
-                    <ImageView
-                        android:layout_width="100dp"
-                        android:layout_height="150dp"
-                        android:src="@drawable/sanphammau2" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:gravity="center"
-                        android:fontFamily="@font/fontxin"
-                        android:text="Sữa rửa mặt" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:gravity="center"
-                        android:fontFamily="@font/fontxin"
-                        android:text="$ 80.00" />
-                </LinearLayout>
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginEnd="16dp"
-                    android:orientation="vertical">
-
-                    <ImageView
-                        android:layout_width="100dp"
-                        android:layout_height="150dp"
-                        android:src="@drawable/sanphammau2" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:gravity="center"
-                        android:fontFamily="@font/fontxin"
-                        android:text="Sữa rửa mặt" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:gravity="center"
-                        android:fontFamily="@font/fontxin"
-                        android:text="$ 80.00" />
-                </LinearLayout>
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginEnd="16dp"
-                    android:orientation="vertical">
-
-                    <ImageView
-                        android:layout_width="100dp"
-                        android:layout_height="150dp"
-                        android:src="@drawable/sanphammau2" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:gravity="center"
-                        android:fontFamily="@font/fontxin"
-                        android:text="Sữa rửa mặt" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:gravity="center"
-                        android:fontFamily="@font/fontxin"
-                        android:text="$ 80.00" />
-                </LinearLayout>
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginEnd="16dp"
-                    android:orientation="vertical">
-
-                    <ImageView
-                        android:layout_width="100dp"
-                        android:layout_height="150dp"
-                        android:src="@drawable/sanphammau2" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:gravity="center"
-                        android:fontFamily="@font/fontxin"
-                        android:text="Sữa rửa mặt" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:gravity="center"
-                        android:fontFamily="@font/fontxin"
-                        android:text="$ 80.00" />
-                </LinearLayout>
-                <!-- Nhóm sản phẩm 2 -->
-
-                <!-- Nhóm sản phẩm 2 -->
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginEnd="16dp"
-                    android:orientation="vertical">
-
-                    <ImageView
-                        android:layout_width="100dp"
-                        android:layout_height="150dp"
-                        android:src="@drawable/sanphammau2" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:gravity="center"
-                        android:fontFamily="@font/fontxin"
-                        android:text="Sữa rửa mặt" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:gravity="center"
-                        android:fontFamily="@font/fontxin"
-                        android:text="$ 80.00" />
-                </LinearLayout>
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginEnd="16dp"
-                    android:orientation="vertical">
-
-                    <ImageView
-                        android:layout_width="100dp"
-                        android:layout_height="150dp"
-                        android:src="@drawable/sanphammau2" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:gravity="center"
-                        android:fontFamily="@font/fontxin"
-                        android:text="Sữa rửa mặt" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:gravity="center"
-                        android:fontFamily="@font/fontxin"
-                        android:text="$ 80.00" />
-                </LinearLayout>
-            </LinearLayout>
+                    android:orientation="horizontal"/>
 
 
-        </HorizontalScrollView>
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -429,411 +218,116 @@
                     android:textSize="20dp"
                     android:fontFamily="@font/fontxin"
                     android:text="Sản phẩm nỗi bật" />
-        <HorizontalScrollView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
 
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal">
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recyclerViewSPNB"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"/>
 
-                <!-- Nhóm sản phẩm 2 -->
+
+                <!-- Khung chữ hình chữ nhật chữ bên trái hình bên phải -->
                 <LinearLayout
+                    android:layout_width="450dp"
+                    android:layout_height="200dp"
+                    android:orientation="horizontal"
+                    android:background="#FBFBFB"
+                    android:padding="10dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="16dp">
+
+                    <!-- Text nằm bên trái -->
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Mỹ phẩm đẹp cho bạn"
+                        android:textSize="23sp"
+                        android:fontFamily="@font/fontxin"
+
+                        android:layout_weight="1" />
+
+                    <!-- Image nằm bên phải -->
+                    <ImageView
+                        android:layout_width="200dp"
+                        android:layout_height="250dp"
+                        android:src="@drawable/mauanh01" />
+                </LinearLayout>
+                <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginEnd="16dp"
-                    android:orientation="vertical">
+                    android:text="Sản phẩm đề xuất "
+                    android:layout_marginLeft="10dp"
+                    android:textSize="23sp"
+                    android:layout_weight="1" />
 
+                <!-- HorizontalScrollView chứa sản phẩm nằm ngang -->
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recyclerViewSPDX"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"/>
+                <!-- Khung chữ hình chữ nhật chữ bên trái hình bên phải -->
+                <LinearLayout
+                    android:layout_width="450dp"
+                    android:layout_height="200dp"
+                    android:orientation="horizontal"
+                    android:background="#FBFBFB"
+                    android:padding="10dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="16dp">
+
+                    <!-- Text nằm bên trái -->
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Sắc màu tỏa sáng mọi nơi"
+                        android:textSize="23sp"
+                        android:fontFamily="@font/fontxin"
+
+                        android:layout_weight="1" />
+
+                    <!-- Image nằm bên phải -->
                     <ImageView
-                        android:layout_width="100dp"
-                        android:layout_height="150dp"
-                        android:src="@drawable/sanphammau1" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:gravity="center"
-                        android:fontFamily="@font/fontxin"
-                        android:text="Sữa rửa mặt" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:gravity="center"
-                        android:fontFamily="@font/fontxin"
-                        android:text="$ 80.00" />
+                        android:layout_width="200dp"
+                        android:layout_height="300dp"
+                        android:src="@drawable/anhmau02" />
                 </LinearLayout>
 
 
-                <!-- Nhóm sản phẩm 2 -->
+                <!-- Khung chữ hình chữ nhật chữ bên trái hình bên phải -->
                 <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginEnd="16dp"
-                    android:orientation="vertical">
+                    android:layout_width="450dp"
+                    android:layout_height="200dp"
+                    android:orientation="horizontal"
+                    android:background="#FBFBFB"
+                    android:padding="10dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="16dp">
 
+                    <!-- Text nằm bên trái -->
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Chăm sóc da, yêu thương"
+                        android:textSize="23sp"
+                        android:fontFamily="@font/fontxin"
+
+                        android:layout_weight="1" />
+
+                    <!-- Image nằm bên phải -->
                     <ImageView
-                        android:layout_width="100dp"
-                        android:layout_height="150dp"
-                        android:src="@drawable/sanphammau1" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:gravity="center"
-                        android:fontFamily="@font/fontxin"
-                        android:text="Sữa rửa mặt" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:gravity="center"
-                        android:fontFamily="@font/fontxin"
-                        android:text="$ 80.00" />
+                        android:layout_width="200dp"
+                        android:layout_height="300dp"
+                        android:src="@drawable/mauanh" />
                 </LinearLayout>
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginEnd="16dp"
-                    android:orientation="vertical">
-
-                    <ImageView
-                        android:layout_width="100dp"
-                        android:layout_height="150dp"
-                        android:src="@drawable/sanphammau1" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:gravity="center"
-                        android:fontFamily="@font/fontxin"
-                        android:text="Sữa rửa mặt" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:gravity="center"
-                        android:fontFamily="@font/fontxin"
-                        android:text="$ 80.00" />
-                </LinearLayout>
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginEnd="16dp"
-                    android:orientation="vertical">
-
-                    <ImageView
-                        android:layout_width="100dp"
-                        android:layout_height="150dp"
-                        android:src="@drawable/sanphammau1" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:gravity="center"
-                        android:fontFamily="@font/fontxin"
-                        android:text="Sữa rửa mặt" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:gravity="center"
-                        android:fontFamily="@font/fontxin"
-                        android:text="$ 80.00" />
-                </LinearLayout>
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginEnd="16dp"
-                    android:orientation="vertical">
-
-                    <ImageView
-                        android:layout_width="100dp"
-                        android:layout_height="150dp"
-                        android:src="@drawable/sanphammau1" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:gravity="center"
-                        android:fontFamily="@font/fontxin"
-                        android:text="Sữa rửa mặt" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:gravity="center"
-                        android:fontFamily="@font/fontxin"
-                        android:text="$ 80.00" />
-                </LinearLayout>
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginEnd="16dp"
-                    android:orientation="vertical">
-
-                    <ImageView
-                        android:layout_width="100dp"
-                        android:layout_height="150dp"
-                        android:src="@drawable/sanphammau1" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:gravity="center"
-                        android:fontFamily="@font/fontxin"
-                        android:text="Sữa rửa mặt" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:gravity="center"
-                        android:fontFamily="@font/fontxin"
-                        android:text="$ 80.00" />
-                </LinearLayout>
-            </LinearLayout>
-
-
-        </HorizontalScrollView>
-
-        <!-- Khung chữ hình chữ nhật chữ bên trái hình bên phải -->
-        <LinearLayout
-            android:layout_width="450dp"
-            android:layout_height="200dp"
-            android:orientation="horizontal"
-            android:background="#FBFBFB"
-            android:padding="10dp"
-            android:layout_marginTop="20dp"
-            android:layout_marginBottom="16dp">
-
-            <!-- Text nằm bên trái -->
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Mỹ phẩm đẹp cho bạn"
-                android:textSize="23sp"
-                android:fontFamily="@font/fontxin"
-
-                android:layout_weight="1" />
-
-            <!-- Image nằm bên phải -->
-            <ImageView
-                android:layout_width="200dp"
-                android:layout_height="250dp"
-                android:src="@drawable/mauanh01" />
-        </LinearLayout>
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Sản phẩm đề xuất "
-            android:layout_marginLeft="10dp"
-            android:textSize="23sp"
-            android:layout_weight="1" />
-
-        <!-- HorizontalScrollView chứa sản phẩm nằm ngang -->
-        <HorizontalScrollView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:scrollbars="none">
-
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="20dp"
-                android:orientation="horizontal">
-
-                <!-- Sản phẩm 1 -->
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginEnd="16dp"
-                    android:orientation="vertical">
-
-                    <ImageView
-                        android:layout_width="100dp"
-                        android:layout_height="150dp"
-                        android:src="@drawable/sanphammau1" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:gravity="center"
-                        android:fontFamily="@font/fontxin"
-                        android:text="Sữa rửa mặt" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:gravity="center"
-                        android:fontFamily="@font/fontxin"
-                        android:text="$ 80.00" />
-                </LinearLayout>
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginEnd="16dp"
-                    android:orientation="vertical">
-
-                    <ImageView
-                        android:layout_width="100dp"
-                        android:layout_height="150dp"
-                        android:src="@drawable/sanphammau1" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:gravity="center"
-                        android:fontFamily="@font/fontxin"
-                        android:text="Sữa rửa mặt" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:gravity="center"
-                        android:fontFamily="@font/fontxin"
-                        android:text="$ 80.00" />
-                </LinearLayout>
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginEnd="16dp"
-                    android:orientation="vertical">
-
-                    <ImageView
-                        android:layout_width="100dp"
-                        android:layout_height="150dp"
-                        android:src="@drawable/sanphammau1" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:gravity="center"
-                        android:fontFamily="@font/fontxin"
-                        android:text="Sữa rửa mặt" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:gravity="center"
-                        android:fontFamily="@font/fontxin"
-                        android:text="$ 80.00" />
-                </LinearLayout>
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginEnd="16dp"
-                    android:orientation="vertical">
-
-                    <ImageView
-                        android:layout_width="100dp"
-                        android:layout_height="150dp"
-                        android:src="@drawable/sanphammau1" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:gravity="center"
-                        android:fontFamily="@font/fontxin"
-                        android:text="Sữa rửa mặt" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:gravity="center"
-                        android:fontFamily="@font/fontxin"
-                        android:text="$ 80.00" />
-                </LinearLayout>
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginEnd="16dp"
-                    android:orientation="vertical">
-
-                    <ImageView
-                        android:layout_width="100dp"
-                        android:layout_height="150dp"
-                        android:src="@drawable/sanphammau1" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:gravity="center"
-                        android:fontFamily="@font/fontxin"
-                        android:text="Sữa rửa mặt" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:gravity="center"
-                        android:fontFamily="@font/fontxin"
-                        android:text="$ 80.00" />
-                </LinearLayout>
-
-            </LinearLayout>
-        </HorizontalScrollView>
-        <!-- Khung chữ hình chữ nhật chữ bên trái hình bên phải -->
-        <LinearLayout
-            android:layout_width="450dp"
-            android:layout_height="200dp"
-            android:orientation="horizontal"
-            android:background="#FBFBFB"
-            android:padding="10dp"
-            android:layout_marginTop="20dp"
-            android:layout_marginBottom="16dp">
-
-            <!-- Text nằm bên trái -->
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Sắc màu tỏa sáng mọi nơi"
-                android:textSize="23sp"
-                android:fontFamily="@font/fontxin"
-
-                android:layout_weight="1" />
-
-            <!-- Image nằm bên phải -->
-            <ImageView
-                android:layout_width="200dp"
-                android:layout_height="300dp"
-                android:src="@drawable/anhmau02" />
-        </LinearLayout>
-
-
-        <!-- Khung chữ hình chữ nhật chữ bên trái hình bên phải -->
-        <LinearLayout
-            android:layout_width="450dp"
-            android:layout_height="200dp"
-            android:orientation="horizontal"
-            android:background="#FBFBFB"
-            android:padding="10dp"
-            android:layout_marginTop="20dp"
-            android:layout_marginBottom="16dp">
-
-            <!-- Text nằm bên trái -->
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Chăm sóc da, yêu thương"
-                android:textSize="23sp"
-                android:fontFamily="@font/fontxin"
-
-                android:layout_weight="1" />
-
-            <!-- Image nằm bên phải -->
-            <ImageView
-                android:layout_width="200dp"
-                android:layout_height="300dp"
-                android:src="@drawable/mauanh" />
-        </LinearLayout>
                 <View
                     android:layout_width="match_parent"
-                android:layout_height="100dp"
-                android:background="@color/white"/>
+                    android:layout_height="100dp"
+                    android:background="@color/white"/>
 
 
-    </LinearLayout>
-    </androidx.constraintlayout.widget.ConstraintLayout>
+            </LinearLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
     </ScrollView>
 
     <!-- Navigation View cho menu điều hướng -->
@@ -899,4 +393,4 @@
         </LinearLayout>
 
     </RelativeLayout>
-    </androidx.drawerlayout.widget.DrawerLayout>
+</androidx.drawerlayout.widget.DrawerLayout>
